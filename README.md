@@ -10,11 +10,13 @@
 |---|---|---:|---|
 | 发布账号待确认（S0001） | 微信公众号 | 1 篇 | [来源记录](sources/S0001.md) |
 | Felix Rieseberg 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0002.md) · [作者背景](authors/A0001.md) |
+| X / @uudonX | X | 1 条 | [来源记录](sources/S0003.md) · [作者背景](authors/A0002.md) |
 
-已收录 2 篇，其中 1 篇已有正文与 AI 摘要，1 篇正文待提供。来源身份确认后更新名称，保留编号。
+已收录 3 条，其中 2 条已有原始材料与 AI 摘要，1 篇正文待提供。来源身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
 
+- [AGENTS.md：长期业务系统的项目说明结构参考](resources/R0003/README.md)：短帖与截图已归档，保留你的留存理由，可按项目说明、按需上下文和验证方式检索。
 - [How to be more ambitious: A tutorial for humans with models](resources/R0002/README.md)：从目标、专业方法和跨领域视角拓展 AI 的用法。可查看作者背景、摘要、正文与可点击标签。
 - 带着问题来：[怎样从小任务转向结果？](problems/从小任务转向结果.md) · [怎样做专业分析并验证？](problems/让AI做专业分析.md) · [怎样借助跨领域方法？](problems/借助跨领域方法.md)
 
