@@ -1,0 +1,15 @@
+# 原仓库只读副本与本地设计演练，不进入正式资料库
+/learning-translations/
+/组织方案预览/
+/build_previews.py
+/build_source_preview.py
+/build_reading_demo.py
+/SKILL.md
+
+# 本地运行环境
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
