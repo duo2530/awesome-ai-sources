@@ -7,3 +7,7 @@
 | R0001 | [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](R0001/README.md) | [发布账号待确认](../sources/S0001.md) / 微信公众号 | 文章 | 链接已收录，正文待提供 | 未记录 |
 | R0002 | [How to be more ambitious: A tutorial for humans with models](R0002/README.md) | [Felix Rieseberg 的个人博客](../sources/S0002.md) / 独立网站 | 文章 | 已有正文与 AI 摘要 | 未记录 |
 | R0003 | [AGENTS.md：长期业务系统的项目说明结构参考](R0003/README.md) | [@uudonX](../sources/S0003.md) / X | 短帖 + 截图 | 已有帖文、截图与 AI 摘要 | 已关注，深入阅读与实践未确认 |
+| R0004 | [《The Complete Guide to pstack Pt. 1》](R0004/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 指南 / 系列第 1 部分 | 已有正文与 AI 摘要 | 未记录 |
+| R0005 | [《Loops You Can Trust》](R0005/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 文章 | 已有正文与 AI 摘要 | 未记录 |
+| R0006 | [《The Complete Guide to pstack Pt. 2》](R0006/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 指南 / 系列第 2 部分（依据标题） | 已有正文与 AI 摘要 | 未记录 |
+| R0007 | [《how i shipped 2,500 PRs last month to production》](R0007/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 视频 / SRT 字幕 | 已有 SRT 字幕与 AI 摘要（未核对画面） | 未记录 |
