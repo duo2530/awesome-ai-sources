@@ -1,0 +1,76 @@
+name: 建议收录资料
+description: 推荐文章、短帖、视频或代码仓库；只给标题和原链接也可以
+title: "收录：资源标题"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只填已知信息；分类、标签和作者身份由维护者核对，不确定就留空或写“不清楚”。
+        只要标题和原链接就能先收录，正文、字幕和截图不必贴在这里，也不要粘贴他人的全文。
+  - type: input
+    id: title
+    attributes:
+      label: 标题
+      placeholder: 文章的标题、帖子的首句或仓库名称
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 原链接
+      description: 保留原始 URL，不改写大小写或参数
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options:
+        - 文章
+        - 短帖
+        - 视频
+        - 代码仓库
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源账号、频道、博客或站点
+      description: 不确定可以留空，由维护者核对
+  - type: textarea
+    id: reason
+    attributes:
+      label: 想用它回答的问题或场景
+      description: 与你在做、在卡的地方的关系；留空也可以
+  - type: checkboxes
+    id: materials
+    attributes:
+      label: 手上已有的材料
+      description: 勾选实际有的即可，都没有也不影响先收录链接
+      options:
+        - label: 原文或正文，可以在收录后补
+        - label: 视频字幕或转录稿
+        - label: 代码仓库的固定分支、tag 或 commit
+        - label: 都没有，只有链接
+  - type: checkboxes
+    id: expectation
+    attributes:
+      label: 期望的处理
+      description: 只是说明用途，是否收录与阅读范围以实际维护结果为准
+      options:
+        - label: 仅收录链接，正文我之后补
+        - label: 希望后续整理摘要、标签与相关问题
+        - label: 希望按代码仓库流程阅读（README、目录、关键文件；默认不克隆、不运行）
+        - label: 先记为候选，暂不深入处理
+  - type: textarea
+    id: notes
+    attributes:
+      label: 其他
+      description: 相关的已有条目或问题页（可选）、补充说明
+  - type: markdown
+    attributes:
+      value: |
+        维护者用 `scripts/check_url.py` 做本地查重；已收录的链接会复用已有条目，不重复建页。
+        Issue 只是候选入口，不计入收录统计；进入资料库仍按 WORKFLOW.md 建条目、记录日期与依据。
