@@ -48,6 +48,17 @@
 
 先读 Increasing application legibility，再读 We made repository knowledge the system of record 和 Enforcing architecture and taste：分别回答“怎样看见运行结果”“怎样找到可信知识”“怎样把边界变成检查”。最后读 Entropy and garbage collection，思考已有模式如何持续维护。
 
+## 关键摘要的原文依据
+
+下表的作者陈述来自已保存正文；本库建议单列，不将团队自述视作独立验证。按章节名可回查原文。
+
+| 关键摘要 | 性质 | 原文依据 | 本库判断与证据缺口 |
+|---|---|---|---|
+| 短 AGENTS.md 作地图，结构化 docs 作知识记录 | 作者实践自述 | [正文：知识记录](正文.md#we-made-repository-knowledge-the-system-of-record)，搜索“roughly 100 lines” | 可借鉴入口与详述分开；约百行是其案例规模，不是所有项目的硬限制 |
+| 采用较少阻塞门禁，部分不稳定测试通过后续运行处理 | 作者取舍及其条件 | [正文：合并取舍](正文.md#throughput-changes-the-merge-philosophy)，搜索“corrections are cheap” | 依赖高吞吐与便宜修正；与 R0021 的关键人工关卡保留差异，缺可直接复用的风险分级和回滚阈值 |
+| 现有模式被反复复制，需要周期性小步清理 | 作者观察与做法 | [正文：持续清理](正文.md#entropy-and-garbage-collection) | 本库据此建议维护索引与规则漂移；原文未证明本库或用户项目能获得同等收益 |
+| 多年架构一致性仍未知 | 作者明确保留的问题 | [正文：仍在学习](正文.md#what-were-still-learning) | 因而不能从短期产出推出长期可维护性；百万行、PR 数等仍是作者自述 |
+
 ## 标签与相关问题
 
 **标签**：[按需上下文](../../tags/按需上下文.md) · [知识沉淀](../../tags/知识沉淀.md) · [架构约束](../../tags/架构约束.md) · [外部验证](../../tags/外部验证.md) · [自动化闭环](../../tags/自动化闭环.md)

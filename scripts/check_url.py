@@ -73,11 +73,19 @@ def check_url(url, resources_dir=DEFAULT_RESOURCES):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='只检查正式资料的原链接，不联网、不修改文件。')
-    parser.add_argument('url', help='待收录的原链接；含 & 等字符时用引号包住')
+    parser.add_argument('url', nargs='?', help='待收录的原链接；含 & 等字符时用引号包住')
+    parser.add_argument('--check-library', action='store_true', help='检查资料状态、日期、内部链接与索引，不进行 URL 查重')
     parser.add_argument('--json', action='store_true', help='输出 JSON，供 AI 或其他脚本读取')
     parser.add_argument('--resources-dir', type=Path, default=DEFAULT_RESOURCES,
                         help='正式资料目录，默认按脚本位置定位，与当前工作目录无关')
     args = parser.parse_args(argv)
+    if args.check_library:
+        if args.url or args.resources_dir != DEFAULT_RESOURCES:
+            parser.error('--check-library 不与 URL 或 --resources-dir 混用；自定义根目录使用 check_library.py --root')
+        from check_library import main as check_library_main
+        return check_library_main(['--json'] if args.json else [])
+    if not args.url:
+        parser.error('请提供 URL，或使用 --check-library')
     try:
         result = check_url(args.url.strip(), args.resources_dir)
     except (OSError, UnicodeError, ValueError) as exc:
