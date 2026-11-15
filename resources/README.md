@@ -11,3 +11,6 @@
 | R0005 | [《Loops You Can Trust》](R0005/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 文章 | 已有正文与 AI 摘要 | 未记录 |
 | R0006 | [《The Complete Guide to pstack Pt. 2》](R0006/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 指南 / 系列第 2 部分（依据标题） | 已有正文与 AI 摘要 | 未记录 |
 | R0007 | [《how i shipped 2,500 PRs last month to production》](R0007/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 视频 / SRT 字幕 | 已有 SRT 字幕与 AI 摘要（未核对画面） | 未记录 |
+| R0008 | [如何搭建一个端到端业务需求专家 Agent](R0008/README.md) | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 | 已有正文与 AI 摘要 | 未记录 |
+| R0009 | [端到端交付2.0：像工业流水线一样的生产和交付需求](R0009/README.md) | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 | 已有正文与 AI 摘要 | 未记录 |
+| R0010 | [我是怎样使用 AI 构建 E2E 测试体系的？](R0010/README.md) | [vikingz.me](../sources/S0006.md) / 独立网站 | 文章 | 链接已收录，正文待提供 | 未记录 |
