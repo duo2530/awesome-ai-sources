@@ -29,3 +29,6 @@
 | R0021 | [从Vibe Coding到Harness—— 一套大仓AI工程化实战](R0021/README.md) | [腾讯技术工程](../sources/S0007.md) / 微信公众号 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-07-07 |
 | R0022 | [Harness engineering: leveraging Codex in an agent-first world](R0022/README.md) | [OpenAI / Index](../sources/S0018.md) / 独立网站 | 文章 / 工程实践复盘 | 已有正文与 AI 摘要 | 未记录 | 2026-02-11 |
 | R0023 | [构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](R0023/README.md) | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 / 知识工程实践 | 已有正文与 AI 摘要 | 未记录 | 2026-06-26 |
+| R0024 | [LLM Wiki](R0024/README.md) | [karpathy](../sources/S0020.md) / GitHub Gist | 思路文档 / Gist | 已有正文与 AI 摘要 | 未记录 | 2026-04-04 |
+| R0025 | [The end of programming](R0025/README.md) | [Paul Dix 的博客](../sources/S0021.md) / 独立网站 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-08-25 |
+| R0026 | [deepseek-ai/dsh-superagent-prototype](R0026/README.md) | [deepseek-ai](../sources/S0022.md) / GitHub | 代码仓库 / 团队编码 Agent 研究原型 | 已读 README、六篇概念与运行文档、包元数据及许可证；未审源码、未运行 | 未记录 | 不适用（仓库） |

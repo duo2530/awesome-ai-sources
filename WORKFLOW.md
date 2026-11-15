@@ -122,6 +122,25 @@ python scripts/check_url.py --check-library --json
 
 区分“链接已收录”“已读文档”“已读部分源码”“已实践”。不因项目自称可用、README 很完整或 star 很多，就填写用户验证成功。
 
+## PR：资源收录与知识巡检
+
+参考 [LLM Wiki](resources/R0024/README.md) 的 Ingest / Query / Lint 思路，PR 除了列改动文件，还应记录新材料怎样更新已有知识，或巡检怎样修正问题答案和证据边界。已有页面优先修订，必要时才新增；原始资料与用户笔记保留，AI 整理层可迭代。
+
+| PR 类型 | 模板 | 需要说清什么 |
+|---|---|---|
+| 添加资源（含补正文和读后整理） | [add-resource.md](.github/PULL_REQUEST_TEMPLATE/add-resource.md) | 收录对象、实际阅读范围、原文依据，以及对已有问题、观点和关联的影响 |
+| 知识巡检 | [knowledge-audit.md](.github/PULL_REQUEST_TEMPLATE/knowledge-audit.md) | 实际检查范围、结构与语义发现、证据、修订、保留分歧和知识缺口 |
+
+仅收录链接也可以使用添加资源模板，明确正文待提供，不提前填摘要或虚构知识更新。巡检可针对一个主题，不强制每次扫描全库；没有发现问题就如实记录，不为填表制造分歧或改动。
+
+查询得到有新信息、能追溯依据的比较或分析，可回存到已有问题页，并在相应 PR 中说明；不要求所有聊天自动入库。两个模板都以实际证据和适用条件为准，不把 AI 推断回存后再当作独立来源。
+
+模板放在 `.github/PULL_REQUEST_TEMPLATE/`。推送并进入默认分支后，GitHub 网页创建 PR 时可在比较链接追加 `template=add-resource.md` 或 `template=knowledge-audit.md`（已有参数时使用 `&template=...`），不要依赖页面自动出现模板选择菜单。参见 [GitHub 多模板说明](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) 与 [模板参数说明](https://docs.github.com/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request)。
+
+本地模板可通过 `gh pr create --template add-resource.md` 或 `gh pr create --template knowledge-audit.md` 选用；需要当前仓库分支与认证。这里仅说明用法，不自动创建、提交或推送 PR。填报实际运行的校验结果，缺少元信息可保留提醒；结构通过不证明语义正确。
+
+PR 描述和 Git 历史保留本次收录或巡检的操作记录，具体知识只维护在对应 Markdown 页面，不重复建立日志或资源清单。这只覆盖本次 PR 的维护记录，不等同于自动记录所有查询。
+
 ## 文件职责
 
 | 位置 | 职责 |
@@ -135,7 +154,8 @@ python scripts/check_url.py --check-library --json
 | `tags/标签名.md` | 同标签内容及相关问题的链接视图 |
 | `problems/问题名.md` | 问题描述、文章路径、阅读顺序与覆盖不足 |
 | `templates/` | 新增记录的模板，不计入资料统计 |
+| `.github/PULL_REQUEST_TEMPLATE/` | 添加资源与知识巡检的 PR 模板，记录证据、知识变化及检查结果 |
 
 内容入口维护权威信息，其他索引只放必要标题、短说明和链接，不复制长篇摘要。当前由 AI 在一次修改中同步 Markdown，不另建第二份 JSON 名单。
 
-来源页可保留“上次检查范围、时间与结果”，尚未实施的自动抓取不得写成已执行。当前不引入 Wiki、Issue 或定时程序；需要远程协作时再确定 GitHub 工作流。
+来源页可保留“上次检查范围、时间与结果”，尚未实施的自动抓取不得写成已执行。当前不引入额外 GitHub Wiki、Issue 或定时程序；远程协作可使用上述两类 PR 模板，尚未配置 GitHub Actions、自动巡检或自动合并。

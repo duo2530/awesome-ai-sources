@@ -16,3 +16,5 @@
 - [R0018：LoopForge](../resources/R0018/README.md)：角色复用、依赖节点与共享运行状态；平台及个人 Local 适用范围分别记录。
 
 - [R0021：大仓 Harness 实战](../resources/R0021/README.md)：串行场景删除未用到独有能力的 Team Mode，保留认知分工与同步调用。
+
+- [R0026：dsh-superagent-prototype](../resources/R0026/README.md)：主会话路由、各 Ticket 执行会话、追问归属与 worker slots；尚未核验源码和并发正确性。

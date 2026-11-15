@@ -21,5 +21,8 @@
 | [GitHub / awslabs（S0015）](S0015.md) | GitHub | 1 个仓库 | 仓库组织与许可证署名已核对；个人维护者未核验 |
 | [GitHub / naodeng（S0016）](S0016.md) | GitHub | 1 个仓库 | 账号所有者已核对；技能元数据署名 contributors，个人背景未核验 |
 | [OpenAI / Index（S0018）](S0018.md) | 独立网站 | 1 篇 | 用户提供官网地址与作者，未远程核验 |
+| [Gist / karpathy（S0020）](S0020.md) | GitHub Gist | 1 篇 | 指定 Gist 页面账号与固定 Raw 地址；未核验个人履历 |
+| [Paul Dix 的博客（S0021）](S0021.md) | 独立网站 | 1 篇 | 用户提供作者与账号链接，身份尚未独立核验 |
+| [GitHub / deepseek-ai（S0022）](S0022.md) | GitHub | 1 个仓库 | owner 为组织；包与许可证署名 DeepSeek Harness Team，个人角色未核验 |
 
 以具体账号、频道、博客、官方文档站为单位，平台仅作为属性。同一主体的跨平台账号先分别记录，身份确认后关联。待确认记录仅关联当前文章，不代表所有未知公众号都属于同一来源。

@@ -25,10 +25,19 @@
 | GitHub / awslabs | GitHub | 1 个仓库 | [来源记录](sources/S0015.md) |
 | GitHub / naodeng | GitHub | 1 个仓库 | [来源记录](sources/S0016.md) |
 | OpenAI / Index | 独立网站 | 1 篇 | [来源记录](sources/S0018.md) · [作者背景](authors/A0014.md) |
+| Gist / karpathy | GitHub Gist | 1 篇 | [来源记录](sources/S0020.md) · [作者背景](authors/A0017.md) |
+| Paul Dix 的博客 | 独立网站 | 1 篇 | [来源记录](sources/S0021.md) · [作者背景](authors/A0018.md) |
+| GitHub / deepseek-ai | GitHub | 1 个仓库 | [来源记录](sources/S0022.md) |
 
-已收录 23 条：15 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），7 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
+已收录 26 条：17 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），8 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [DeepSeek dsh-superagent 研究原型](resources/R0026/README.md)：单仓库事件、授权任务、会话执行与待人工处理面板；非正式产品，已读文档，未审源码或运行。
+
+- [The end of programming](resources/R0025/README.md)（2026-08-25，用户提供）：作者关于编程工作方式的预测及两个未发布实验；[AI 原型怎样走向生产？](problems/AI原型如何走向生产.md)
+
+- [LLM Wiki：Karpathy 的个人知识库模式](resources/R0024/README.md)（2026-04-04）：原始材料、生成知识与维护规则分层，收录、查询回存与巡检。
 
 - [直播数据 LLM Wiki 实践](resources/R0023/README.md)（2026-06-26）：来源治理、结构化页面、关系图与检索；[散落资料怎样形成可追溯知识库？](problems/散落资料如何形成可追溯知识库.md)
 
