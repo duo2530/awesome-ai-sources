@@ -32,7 +32,7 @@ class LibraryTests(unittest.TestCase):
 ''')
         self.write('resources/R0001/正文.md', '# 原文\n<!-- 正文开始 -->\n' + '用户提供的第三方文字。' * 10 + '\n<!-- 正文结束 -->\n')
         self.write('resources/README.md', '''# 内容
-| R0001 | [示例文章](R0001/README.md) | [来源](../sources/S0001.md) | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-06-26 |
+| R0001 | [示例文章](R0001/README.md) | 一篇用于测试的示例文章摘要 | [来源](../sources/S0001.md) | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-06-26 |
 ''')
         self.write('sources/S0001.md', '# 来源\n## 已收录内容\n[资料](../resources/R0001/README.md)\n')
         self.write('sources/README.md', '# 来源\n| [来源](S0001.md) | 平台 | 1 篇 | 身份 |\n')
@@ -42,6 +42,7 @@ class LibraryTests(unittest.TestCase):
         self.write('tags/README.md', '# 标签\n当前有 1 个标签，覆盖 1 条已整理内容\n[知识](知识.md)（1 条）\n')
         self.write('problems/问题.md', '# 问题\n[资料](../resources/R0001/README.md)\n')
         self.write('problems/README.md', '# 问题\n归纳出 1 个问题入口\n[问题](问题.md)\n')
+        self.write('log.md', '# 日志\n## [2026-11-15] ingest | 示例\n')
 
     def write(self, name, text):
         file = self.root / name
@@ -157,6 +158,55 @@ class LibraryTests(unittest.TestCase):
         result = subprocess.run([sys.executable, str(SCRIPT), '--root', str(self.root), '--json'],
                                 cwd=self.temp.name, capture_output=True)
         self.assertEqual(result.returncode, 2)
+
+    def test_index_summary_column_is_required(self):
+        self.replace('resources/README.md', '一篇用于测试的示例文章摘要', '太短')
+        self.assertTrue(any('一句话摘要应为 8–80 字' in e for e in self.check()['errors']))
+
+    def test_entry_without_problem_page_is_warned(self):
+        self.replace('resources/R0001/README.md', ' · [问题](../../problems/问题.md)', '')
+        self.assertTrue(any('未被任何问题页引用' in w for w in self.check()['warnings']))
+
+    def test_topic_page_checks(self):
+        self.write('synthesis/README.md',
+                   '# 综合\n| 编号 | 主题 | 涉及资料 | 最近修订 |\n|---|---|---|---|\n'
+                   '| [T0001](T0001-示例.md) | 示例 | [R0001](../resources/R0001/README.md) | 2026-11-15 |\n')
+        self.write('synthesis/T0001-示例.md', '''# 示例主题
+- 综合编号：T0001
+- 主题：示例
+- 涉及资料：[R0001](../resources/R0001/README.md)
+- 最近修订：2026-11-15
+- 依据范围：示例
+- 内容处理：已有 AI 综合
+''')
+        self.assertTrue(any('涉及资料须链接至少两条正式内容' in e for e in self.check()['errors']))
+        self.replace('synthesis/T0001-示例.md', '综合编号：T0001', '综合编号：T0002')
+        self.assertTrue(any('综合编号与文件名不一致' in e for e in self.check()['errors']))
+        self.replace('synthesis/T0001-示例.md', '综合编号：T0002', '综合编号：T0001')
+        self.replace('synthesis/README.md', '2026-11-15', '2026-11-14')
+        self.assertTrue(any('最近修订与页面不一致' in e for e in self.check()['errors']))
+
+    def test_topic_without_index_record_is_reported(self):
+        self.write('synthesis/README.md', '# 综合\n| 编号 | 主题 | 涉及资料 | 最近修订 |\n|---|---|---|---|\n')
+        self.write('synthesis/T0001-示例.md', '''# 示例主题
+- 综合编号：T0001
+- 主题：示例
+- 涉及资料：[R0001](../resources/R0001/README.md)
+- 最近修订：2026-11-15
+- 依据范围：示例
+- 内容处理：已有 AI 综合
+''')
+        self.assertTrue(any('缺少 T0001 的索引记录' in e for e in self.check()['errors']))
+
+    def test_log_format_order_and_references_are_checked(self):
+        self.replace('log.md', 'ingest', 'unknown')
+        self.assertTrue(any('未知日志类型' in e for e in self.check()['errors']))
+        self.write('log.md', '# 日志\n## [2026-11-15] ingest | 后\n## [2026-11-14] ingest | 前\n')
+        self.assertTrue(any('时间正序' in e for e in self.check()['errors']))
+        self.write('log.md', '# 日志\n## [2026-11-15] ingest | 引用 R9999\n')
+        self.assertTrue(any('R9999 不存在' in e for e in self.check()['errors']))
+        (self.root / 'log.md').unlink()
+        self.assertTrue(any('缺少维护日志' in e for e in self.check()['errors']))
 
 
 if __name__ == '__main__':

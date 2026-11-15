@@ -123,11 +123,16 @@ def check_library(root=ROOT):
                 'authors/README.md', 'tags/README.md', 'problems/README.md']
     files = {root / name for name in required}
     files.update(root / name for name in ('AGENTS.md', 'WORKFLOW.md') if (root / name).exists())
-    for directory in ('sources', 'authors', 'tags', 'problems'):
+    if (root / 'log.md').is_file():
+        files.add(root / 'log.md')
+    for directory in ('sources', 'authors', 'tags', 'problems', 'synthesis'):
         files.update((root / directory).glob('*.md'))
     entries = sorted(p for p in (root / 'resources').glob('R*/README.md')
                      if re.fullmatch(r'R\d+', p.parent.name))
+    topics = sorted(p for p in (root / 'synthesis').glob('T*.md')
+                    if re.fullmatch(r'T\d+-.+\.md', p.name))
     files.update(entries)
+    files.update(topics)
     for file in sorted(files):
         try:
             texts[file.resolve()] = file.read_text(encoding='utf-8-sig')
@@ -168,6 +173,7 @@ def check_library(root=ROOT):
                 error(file, f'章节锚点不存在：{link}')
 
     metadata, source_members, tag_members = {}, {}, {}
+    problem_members = set()
     pending, articles, repositories = 0, 0, 0
     for file in entries:
         file = file.resolve()
@@ -240,6 +246,8 @@ def check_library(root=ROOT):
         for target in references.get(file, set()):
             if target.parent == root / 'tags' and target.name != 'README.md':
                 tag_members.setdefault(target, set()).add(file)
+            if target.parent == root / 'problems' and target.name != 'README.md':
+                problem_members.add(file)
             if target.parent in (root / 'tags', root / 'problems', root / 'authors') and target.name != 'README.md':
                 if file not in references.get(target, set()):
                     error(file, f'关联页缺少返回本资料的链接：{target.relative_to(root)}')
@@ -248,6 +256,11 @@ def check_library(root=ROOT):
                 error(file, f'来源页漏收录本资料：{source.name}')
 
     entry_set = set(metadata)
+    tagged = set().union(*tag_members.values()) if tag_members else set()
+    for file in sorted(entry_set - tagged):
+        warnings.append(f'{file.relative_to(root)}: 未被任何标签页引用')
+    for file in sorted(entry_set - problem_members):
+        warnings.append(f'{file.relative_to(root)}: 未被任何问题页引用')
     index = root / 'resources/README.md'
     rows = {}
     for line in texts.get(index, '').splitlines():
@@ -262,8 +275,8 @@ def check_library(root=ROOT):
         error(index, '全部内容表格编号与正式资料目录不一致')
     for file, meta in metadata.items():
         cells = rows.get(file.parent.name, [])
-        if len(cells) != 7:
-            error(index, f'{file.parent.name} 应有七列表格记录')
+        if len(cells) != 8:
+            error(index, f'{file.parent.name} 应有八列表格记录')
             continue
         if file not in targets(index, cells[1]):
             error(index, f'{file.parent.name} 标题链接指向错误')
@@ -271,16 +284,96 @@ def check_library(root=ROOT):
         index_title = re.match(r'^\[([^\]]+)\]\(', cells[1])
         if title and (not index_title or index_title[1] != title[1]):
             error(index, f'{file.parent.name} 的标题与内容入口不一致')
-        for column, key in ((3, '形式'), (4, '内容处理'), (5, '我的阅读')):
+        summary = cells[2]
+        if not 8 <= len(summary) <= 80:
+            error(index, f'{file.parent.name} 的一句话摘要应为 8–80 字')
+        for column, key in ((4, '形式'), (5, '内容处理'), (6, '我的阅读')):
             if cells[column] != meta.get(key):
                 error(index, f'{file.parent.name} 的{key}与内容入口不一致')
         date_value = meta.get('原文发布日期', '')
         expected = ('不适用（仓库）' if '代码仓库' in meta.get('形式', '') else
                     '待补充' if date_value.startswith('待补充') else date_value.split('（')[0].split(' ')[0])
-        if cells[6] != expected:
+        if cells[7] != expected:
             error(index, f'{file.parent.name} 的发布日期与内容入口不一致')
-        if targets(index, cells[2]) != targets(file, meta.get('发布来源', '')):
+        if targets(index, cells[3]) != targets(file, meta.get('发布来源', '')):
             error(index, f'{file.parent.name} 的来源与内容入口不一致')
+
+    topic_index = root / 'synthesis/README.md'
+    if topic_index.exists() or topics:
+        if topic_index not in texts:
+            error(topic_index, '综合索引缺失或无法读取')
+        rows, ids = {}, set()
+        for line in texts.get(topic_index, '').splitlines():
+            match = re.match(r'^\|\s*\[(T\d+)\]\(([^)]+)\)\s*\|', line)
+            if not match:
+                continue
+            if match[1] in rows:
+                error(topic_index, f'重复综合编号 {match[1]}')
+            rows[match[1]] = (match[2], [c.strip() for c in table_cells(line)])
+        for file in topics:
+            file = file.resolve()
+            text = texts.get(file, '')
+            meta = fields(text)
+            topic_id = file.name.split('-', 1)[0]
+            ids.add(topic_id)
+            for key in ('综合编号', '主题', '涉及资料', '最近修订', '依据范围', '内容处理'):
+                occurrences = re.findall(r'^- ' + re.escape(key) + r'：([^\n]*)$', text, re.M)
+                if len(occurrences) != 1 or not occurrences[0].strip():
+                    error(file, f'字段“{key}”必须唯一且非空')
+            if meta.get('综合编号') != topic_id:
+                error(file, '综合编号与文件名不一致')
+            if len(targets(file, meta.get('涉及资料', '')) & entry_set) < 2:
+                error(file, '涉及资料须链接至少两条正式内容')
+            value = meta.get('最近修订', '')
+            try:
+                match = re.match(r'^(\d{4})-(\d{2})-(\d{2})(?=$|\s|（|\()', value)
+                if not match:
+                    raise ValueError('应使用 YYYY-MM-DD')
+                date(int(match[1]), int(match[2]), int(match[3]))
+            except ValueError as exc:
+                error(file, f'最近修订非法：{value}（{exc}）')
+            row = rows.get(topic_id)
+            if not row:
+                error(topic_index, f'缺少 {topic_id} 的索引记录')
+                continue
+            if not row[0].startswith(('http://', 'https://')):
+                if (topic_index.parent / unquote(row[0])).resolve() != file:
+                    error(topic_index, f'{topic_id} 的链接指向错误')
+            if row[1] and row[1][-1] != meta.get('最近修订', ''):
+                error(topic_index, f'{topic_id} 的最近修订与页面不一致')
+        for topic_id in sorted(set(rows) - ids):
+            error(topic_index, f'索引中的 {topic_id} 没有对应页面')
+
+    log = root / 'log.md'
+    if not log.is_file():
+        error(log, '缺少维护日志 log.md')
+    else:
+        logged = []
+        for line in texts.get(log, '').splitlines():
+            if not line.startswith('## '):
+                continue
+            match = re.match(r'^## \[(\d{4}-\d{2}-\d{2})\] (\S+) \| (.+)$', line)
+            if not match:
+                error(log, f'日志条目格式不符：{line[:40]}')
+                continue
+            logged.append(match)
+        if not logged:
+            error(log, '日志至少应有一条记录')
+        previous = None
+        for match in logged:
+            try:
+                day = date(int(match[1][:4]), int(match[1][5:7]), int(match[1][8:10]))
+            except ValueError:
+                error(log, f'日志日期非法：{match[1]}')
+                continue
+            if match[2] not in ('ingest', 'query', 'lint', 'synthesis', 'schema'):
+                error(log, f'未知日志类型：{match[2]}')
+            if previous and day < previous:
+                error(log, '日志须按时间正序追加')
+            previous = day
+            for record in re.findall(r'R\d+', match[3]):
+                if not (root / 'resources' / record).is_dir():
+                    error(log, f'日志引用的 {record} 不存在')
 
     def check_members(index_file, members, directory):
         actual = {p for p in (root / directory).glob('*.md') if p.name != 'README.md'}
