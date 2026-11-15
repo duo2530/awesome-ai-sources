@@ -14,13 +14,36 @@
 | X / lauren（@poteto） | X | 4 条 | [来源记录](sources/S0004.md) · [作者背景](authors/A0003.md) |
 | 千问AI平台 | 微信公众号 | 2 篇 | [来源记录](sources/S0005.md) |
 | vikingz.me 博客（名称待确认） | 独立网站 | 1 篇 | [来源记录](sources/S0006.md) |
-| 腾讯技术工程 | 微信公众号 | 1 篇 | [来源记录](sources/S0007.md) |
+| 腾讯技术工程 | 微信公众号 | 2 篇 | [来源记录](sources/S0007.md) |
 | Claude / Resources Articles | 独立网站 | 1 篇 | [来源记录](sources/S0008.md) |
 | Kiro Blog | 独立网站 | 1 篇 | [来源记录](sources/S0009.md) |
+| GitHub / kirodotdev | GitHub | 1 个仓库 | [来源记录](sources/S0010.md) |
+| GitHub / mattpocock | GitHub | 1 个仓库 | [来源记录](sources/S0011.md) · [作者背景](authors/A0011.md) |
+| GitHub / cursor | GitHub | 1 条仓库子目录 | [来源记录](sources/S0012.md) · [作者背景](authors/A0003.md) |
+| GitHub / cloudflare | GitHub | 1 个仓库 | [来源记录](sources/S0013.md) |
+| GitHub / Tencent | GitHub | 1 个仓库 | [来源记录](sources/S0014.md) |
+| GitHub / awslabs | GitHub | 1 个仓库 | [来源记录](sources/S0015.md) |
+| GitHub / naodeng | GitHub | 1 个仓库 | [来源记录](sources/S0016.md) |
 
-已收录 13 条，其中 12 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），1 条正文待提供。来源身份确认后更新名称，保留编号。
+已收录 21 条：13 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），7 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [从 Vibe Coding 到 Harness：大仓实战](resources/R0021/README.md)（2026-07-07）：角色契约、门禁基线与删除无收益 Team Mode 的复盘。
+
+- [awesome-qa-skills](resources/R0020/README.md)：双语 QA 技能与工作流，重点整理回归选择和 Agent 结果、轨迹测试；[怎样选择回归并说明缺口？](problems/变更后如何选择回归测试.md)
+
+- [awslabs/aidlc-workflows](resources/R0019/README.md)：一套核心适配多个编码宿主，按任务选择工作流范围；已读档位、阶段与审批说明，未运行。
+
+- [Tencent LoopForge](resources/R0018/README.md)：聊天工作空间、角色与 SOP 交付，区分团队平台和个人 Local；已读文档，未部署。
+
+- [Cloudflare security-audit-skill](resources/R0017/README.md)：覆盖台账、候选反证、独立复核和结构化报告；[怎样减少 AI 安全审计误报？](problems/AI安全审计如何减少误报.md)
+
+- [pstack 插件目录](resources/R0016/README.md)：关联 pstack 指南，已读验证技能生成与维护流程，作者署名 Lauren Tan。
+
+- [mattpocock/skills](resources/R0015/README.md)：可组合的工程技能；已读需求对齐入口、TDD 与面向 Agent 的文档写法。
+
+- [KiroCrew 代码仓库](resources/R0014/README.md)：已读固定版本的文档、目录与维护者信息；从会话、记忆和治理入口继续查实现。
 
 - [Kiro Crew 软件工厂案例](resources/R0013/README.md)：五阶段并行演进、协调瓶颈与治理；已关联三位作者及截图证据，发布日期待补充。
 
@@ -42,11 +65,6 @@
 
 ## 下一步处理
 
-
-
-
-
-
 - [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](resources/R0001/README.md)：[粘贴正文](resources/R0001/正文.md)。
 
 ## 如何开始
@@ -54,5 +72,7 @@
 直接提供标题和原链接，知道账号或频道名称时一并提供。无需先想标签和摘要。
 
 AI 会建立条目、返回正文文件位置；你粘贴正文后通知 AI，再补充摘要、标签、相关问题和推荐阅读。
+
+**代码仓库也可以直接收录**：贴仓库名称、地址和留存理由即可。仓库使用独立的[收录与阅读流程](WORKFLOW.md#代码仓库收录与阅读流程)，记录用途、版本、关键目录和问题关系，不需要粘贴正文；默认不克隆或运行代码。
 
 这里是正式资料库入口。之前的设计样稿及模拟数据仍保留在本地，不纳入本库索引与统计。

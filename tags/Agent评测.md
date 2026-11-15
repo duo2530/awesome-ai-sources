@@ -10,3 +10,5 @@
 
 
 - [R0012：AI-native SDLC playbook](../resources/R0012/README.md)：对模型、技能、提示词和 hooks 的变化运行回归任务。
+
+- [R0020：awesome-qa-skills](../resources/R0020/README.md)：同时评价结果和过程轨迹，记录版本、终止分类与重复结果，不把单次成功当可靠性。

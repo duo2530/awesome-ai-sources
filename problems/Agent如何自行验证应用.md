@@ -22,6 +22,12 @@
 
 本库尚无用户项目的验证工具实现、覆盖率评估或实际效率对照。截图和界面交互不能覆盖全部业务逻辑；需要结合具体验收条件与适用测试。
 
+## 仓库参考
+
+[R0015：mattpocock/skills](../resources/R0015/README.md)：tdd 补公共接口测试与逐步反馈；没有为用户项目构建应用操作环境。
+
+补充仓库参考：[R0016：pstack](../resources/R0016/README.md)。从 create-verification-skill 看项目调查、启动、健康检查、用户路径与证据；再读 maintain-verification-skill 看持续核验。 本库未为用户项目实际生成或验证。
+
 ## 我的实践
 
 未记录。本文中的安装、云 Agent 和定时命令仅作为资料收录，没有执行。

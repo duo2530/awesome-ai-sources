@@ -10,3 +10,5 @@
 
 
 - [R0005](../resources/R0005/README.md)：机械迁移用 codemod 和 checker，反复手工作业沉淀为工具。
+
+- [R0016：pstack 插件目录](../resources/R0016/README.md)：调查真实启动、交互、观察与隔离方式，明确 Doctor、Drive、证据和清理流程。

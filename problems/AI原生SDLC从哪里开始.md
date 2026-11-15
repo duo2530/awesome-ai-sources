@@ -18,6 +18,8 @@
 
 本库没有用户团队的交付时间基线，不能仅凭指南指定最值得先改的阶段，也未部署生产或自动化。
 
+补充仓库：[R0019：AI-DLC workflows](../resources/R0019/README.md)。先看 workflow-profiles，比较 PoC、Bugfix、Express 和 Feature 的路线与默认审查力度，再按实际瓶颈选择；本库未运行。
+
 ## 我的实践
 
 未记录。本页问题由 AI 根据材料归纳。
