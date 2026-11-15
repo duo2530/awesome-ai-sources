@@ -131,6 +131,24 @@ class LibraryTests(unittest.TestCase):
         self.assertTrue(any('标题与内容入口不一致' in e for e in errors))
         self.assertTrue(any('形式与内容入口不一致' in e for e in errors))
 
+    def test_table_broken_by_blank_line_is_reported(self):
+        self.write('authors/README.md', '# 作者\n| 作者 | 背景 |\n|---|---|\n| [A](A0001.md) | x |\n\n| [A](A0001.md) | y |\n')
+        self.assertTrue(any('表格被空行打断' in e for e in self.check()['errors']))
+
+    def test_table_column_mismatch_is_reported(self):
+        self.write('authors/README.md', '# 作者\n| 作者 | 背景 |\n|---|---|\n| [A](A0001.md) | x | 多余 |\n')
+        self.assertTrue(any('列数与表头不一致' in e for e in self.check()['errors']))
+
+    def test_unclosed_fence_and_comment_are_reported(self):
+        self.write('WORKFLOW.md', '# 流程\n```text\n示例\n')
+        self.assertTrue(any('围栏未闭合' in e for e in self.check()['errors']))
+        self.write('WORKFLOW.md', '# 流程\n<!-- 未闭合\n')
+        self.assertTrue(any('HTML 注释未闭合' in e for e in self.check()['errors']))
+
+    def test_loose_list_and_single_pipe_paragraph_are_not_errors(self):
+        self.write('WORKFLOW.md', '# 流程\n- 一\n\n- 二\n\n| 单行段落 |\n')
+        self.assertEqual(self.check()['errors'], [])
+
     def test_cli_uses_script_root_and_reports_nonzero_on_errors(self):
         result = subprocess.run([sys.executable, str(SCRIPT), '--root', str(self.root), '--json'],
                                 cwd=self.temp.name, capture_output=True)

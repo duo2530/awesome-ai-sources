@@ -40,6 +40,60 @@ def section(text, title):
     return match[1] if match else ''
 
 
+FENCE = re.compile(r'^\s*(`{3,}|~{3,})')
+
+
+def table_cells(line):
+    """按未转义竖线切分表格行，忽略首尾边界竖线。"""
+    parts = re.split(r'(?<!\\)\|', line.strip())
+    if parts and not parts[0].strip():
+        parts = parts[1:]
+    if parts and not parts[-1].strip():
+        parts = parts[:-1]
+    return parts
+
+
+def block_errors(text):
+    """检查维护文件的块结构；不得传入第三方原始正文。
+
+    只覆盖可机械判定的渲染缺陷：围栏与注释是否闭合、表格是否被空行打断、
+    表格列数与表头是否一致。单个以竖线开头的段落不视为表格，列表间的空行
+    属合法的松散列表，均不报错。
+    """
+    messages = []
+    if sum(1 for line in text.splitlines() if FENCE.match(line)) % 2:
+        messages.append('代码围栏未闭合（围栏标记数为奇数）')
+    plain = without_code(text)
+    if plain.count('<!--') != plain.count('-->'):
+        messages.append('HTML 注释未闭合（起止标记数量不一致）')
+    lines = plain.splitlines()
+    for index in range(1, len(lines) - 1):
+        if not lines[index].strip() and lines[index - 1].startswith('|') and lines[index + 1].startswith('|'):
+            messages.append(f'第 {index + 1} 行：表格被空行打断')
+    index = 0
+    while index < len(lines):
+        if not lines[index].startswith('|'):
+            index += 1
+            continue
+        start = index
+        block = []
+        while index < len(lines) and lines[index].startswith('|'):
+            block.append((index, lines[index]))
+            index += 1
+        if len(block) < 2:
+            continue
+        delimiter = block[1][1]
+        if not re.fullmatch(r'[\s|:\-]+', delimiter) or '-' not in delimiter:
+            messages.append(f'第 {start + 1} 行：连续的表格行缺少分隔行')
+            continue
+        width = len(table_cells(block[0][1]))
+        for row, line in block:
+            count = len(table_cells(line))
+            if width and count != width:
+                messages.append(f'第 {row + 1} 行：表格列数与表头不一致（{count} 列，应为 {width} 列）')
+    return messages
+
+
 def local_target(file, url):
     parts = urlsplit(url)
     if parts.scheme or parts.netloc:
@@ -91,6 +145,10 @@ def check_library(root=ROOT):
             if target is not None:
                 result.add(target)
         return result
+
+    for file, text in texts.items():
+        for message in block_errors(text):
+            error(file, message)
 
     references = {file: targets(file, text) for file, text in texts.items()}
     for file, text in texts.items():
