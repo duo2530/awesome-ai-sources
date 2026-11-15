@@ -30,10 +30,16 @@
 | Mitchell Hashimoto 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0023.md) · [作者背景](authors/A0020.md) |
 | GitHub / loopx-project | GitHub | 1 个仓库 | [来源记录](sources/S0024.md) |
 | GitHub / orbi-build | GitHub | 1 个仓库 | [来源记录](sources/S0025.md) |
+| X / @addyosmani | X | 1 条 | [来源记录](sources/S0026.md) · [作者背景](authors/A0021.md) |
+| claude.dev | 独立网站 | 1 篇 | [来源记录](sources/S0027.md) |
 
-已收录 29 条：19 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），10 条仓库资料已读文档，0 篇正文待提供。来源与作者身份确认后更新名称，保留编号。
+已收录 31 条：21 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），10 条仓库资料已读文档，0 篇正文待提供。来源与作者身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [How the Claude Code team does code review](resources/R0031/README.md)（2026-10-15）：六层检查加回滚线、用事故当评测集、评审必须收敛；三位作者合署，数字为团队自述。
+
+- [Your coding agents made you a manager](resources/R0030/README.md)（2026-11-08）：把带团队的做法搬到带 Agent，11 节“最佳实践 / 反模式”，并自陈类比的七处边界；[约束何时下沉](problems/提示词约束何时下沉.md)
 
 - [orbi-build/orbi](resources/R0029/README.md)：给 GitHub Issue 打 `ai-ready` 标签，走到独立评审、合并与发布；只有 reviewed head 能合并，失败即标 `ai-blocked` 交人。已读 README，未审源码。
 

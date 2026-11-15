@@ -24,3 +24,7 @@
 - [R0028：loopx](../resources/R0028/README.md)：注册 Agent 互为 peer，由 claim、lease、任务边界与类型化续接决定谁下一步行动，不设持久 leader。
 
 - [R0029：orbi](../resources/R0029/README.md)：实现会话与独立评审会话分工，评审在同一会话内修复后交合并门禁。
+
+- [R0030：Your coding agents made you a manager](../resources/R0030/README.md)：并行要按不重叠切片拆分，否则只是“一个五作者的 merge conflict”；提出编排税——超过前几个 Agent 后，每个新增都要更多注意力。
+
+- [R0031：How the Claude Code team does code review](../resources/R0031/README.md)：多个 agent 并行找 bug、独立投票判定是否有效；也记录了 agent 作者与 agent 评审一夜互相触发 50 多轮的反面案例。

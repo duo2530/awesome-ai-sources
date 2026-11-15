@@ -35,3 +35,5 @@
 | R0027 | [My AI Adoption Journey](R0027/README.md) | [Mitchell Hashimoto 的个人博客](../sources/S0023.md) / 独立网站 | 文章 / 个人经验记录 | 已有正文与 AI 摘要 | 未记录 | 2026-02-05 |
 | R0028 | [loopx-project/loopx](R0028/README.md) | [loopx-project](../sources/S0024.md) / GitHub | 代码仓库 / 长时程 Agent 控制面 | 已读 README 与仓库元数据；未读 docs、源码与基准数据，未安装未运行 | 未记录 | 不适用（仓库） |
 | R0029 | [orbi-build/orbi](R0029/README.md) | [orbi-build](../sources/S0025.md) / GitHub | 代码仓库 / 以 GitHub Issue 驱动的自动交付系统 | 已读 README 与仓库元数据；未读 docs 全量、源码与测试，未安装未运行 | 未记录 | 不适用（仓库） |
+| R0030 | [Your coding agents made you a manager](R0030/README.md) | [@addyosmani](../sources/S0026.md) / X | 长贴 / 管理实践对照（含 11 个小节与配图） | 已有正文与 AI 摘要 | 未记录 | 2026-11-08 |
+| R0031 | [How the Claude Code team does code review](R0031/README.md) | [claude.dev](../sources/S0027.md) / 独立网站 | 文章 / 长文（含 4 幅内联图表） | 已有正文与 AI 摘要 | 未记录 | 2026-10-15 |
