@@ -37,3 +37,4 @@
 | R0029 | [orbi-build/orbi](R0029/README.md) | 以 GitHub Issue 为唯一状态的自动交付系统，独立评审与失败即停。 | [orbi-build](../sources/S0025.md) / GitHub | 代码仓库 / 以 GitHub Issue 驱动的自动交付系统 | 已读 README 与仓库元数据；未读 docs 全量、源码与测试，未安装未运行 | 未记录 | 不适用（仓库） |
 | R0030 | [Your coding agents made you a manager](R0030/README.md) | 把带团队的方法搬到带 Agent：验证手段、上下文与边界。 | [@addyosmani](../sources/S0026.md) / X | 长贴 / 管理实践对照（含 11 个小节与配图） | 已有正文与 AI 摘要 | 未记录 | 2026-11-08 |
 | R0031 | [How the Claude Code team does code review](R0031/README.md) | 用六层检查与回滚线设计代码评审的风险责任分层。 | [claude.dev](../sources/S0027.md) / 独立网站 | 文章 / 长文（含 4 幅内联图表） | 已有正文与 AI 摘要 | 未记录 | 2026-10-15 |
+| R0032 | [How AI assistance impacts the formation of coding skills](R0032/README.md) | 随机对照实验：AI 组学得更少、也没明显更快，怎么用比用不用更关键。 | [Anthropic Research](../sources/S0028.md) / 独立网站 | 文章 / 研究报告摘要（随机对照实验，含 2 幅图表） | 已有正文与 AI 摘要 | 未记录 | 待补充 |
