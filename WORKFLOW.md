@@ -172,6 +172,12 @@ python scripts/check_url.py --check-library --json
 
 本地模板可通过 `gh pr create --template add-resource.md` 或 `gh pr create --template knowledge-audit.md` 选用；需要当前仓库分支与认证。这里仅说明用法，不自动创建、提交或推送 PR。填报实际运行的校验结果，缺少元信息可保留提醒；结构通过不证明语义正确。
 
+### 外部建议：Issue 模板
+
+远程建议收录时使用 [建议收录资料](.github/ISSUE_TEMPLATE/suggest-resource.md)，只要求标题、原链接和留存理由，不必粘贴正文。Issue 只是候选入口，不是收录记录：不入库、不计入统计、不替代条目或正文；进入资料库仍按第一轮流程查重、建条目、记录日期与依据，并在 Git 中留下改动。Issue 里不保存原文全文、字幕或截图。
+
+新建 Issue 时可在模板选择器中选择该模板，或在 URL 追加 `?template=suggest-resource.md` 预填大纲。仓库不自动读取、订阅或关闭 Issue，是否收录与阅读范围由维护者人工处理并回复实际结果。
+
 PR 描述记录本次维护的推理与检查结果，[log.md](log.md) 记录知识事件的时间线，具体知识只维护在对应 Markdown 页面。log 只记事件与依据，不复制摘要；它不替代 Git 版本记录，也不自动记录所有查询。
 
 ## 文件职责
@@ -191,7 +197,8 @@ PR 描述记录本次维护的推理与检查结果，[log.md](log.md) 记录知
 | `synthesis/README.md` | 综合页索引与最近修订日期 |
 | `templates/` | 新增记录的模板，不计入资料统计 |
 | `.github/PULL_REQUEST_TEMPLATE/` | 添加资源与知识巡检的 PR 模板，记录证据、知识变化及检查结果 |
+| `.github/ISSUE_TEMPLATE/` | 外部建议收录资料的 Issue 模板；Issue 只是候选，不作为已收录资料 |
 
 内容入口维护权威信息，其他索引只放必要标题、短说明和链接，不复制长篇摘要。当前由 AI 在一次修改中同步 Markdown，不另建第二份 JSON 名单。
 
-来源页可保留“上次检查范围、时间与结果”，尚未实施的自动抓取不得写成已执行。当前不引入额外 GitHub Wiki、Issue 或定时程序；远程协作可使用上述两类 PR 模板，尚未配置 GitHub Actions、自动巡检或自动合并。
+来源页可保留“上次检查范围、时间与结果”，尚未实施的自动抓取不得写成已执行。不引入 GitHub Wiki 或定时程序；远程协作使用建议收录资料的 Issue 与上述两类 PR 模板，尚未配置 GitHub Actions、自动巡检或自动合并。

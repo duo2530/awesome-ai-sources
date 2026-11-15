@@ -29,5 +29,5 @@
 - 第三轮查询产生的新综合判断回存到问题页“当前认识”，区分作者陈述、项目自述、本库归纳与用户实践；结构检查通过不等于语义成立，矛盾、过时与知识缺口按需人工巡检，不因脚本通过就认定结论正确。
 - 每轮维护按 [log.md](log.md) 格式追加事件：收录与补正文记 `ingest`，查询回存记 `query`，巡检记 `lint`，综合页记 `synthesis`，规则与检查变更记 `schema`；只记事件与依据，不复制摘要。
 - 每轮维护后运行 `scripts/check_url.py --check-library` 检查状态、日期、内部链接和索引一致性；错误修复后复查，未知发布日期保留为提醒，不编造补齐。此检查只读、不联网，不替代内容审阅或实践验证。
-- 用户要求创建 PR 时，添加资源、补正文与读后整理使用 `.github/PULL_REQUEST_TEMPLATE/add-resource.md`，知识巡检使用 `knowledge-audit.md`。记录对已有知识的影响或实际巡检发现，不复制整份摘要；未核验部分明确保留。模板用法见 WORKFLOW.md，不因存在模板就自动提交、推送或创建 PR。
+- 用户要求创建 PR 时，添加资源、补正文与读后整理使用 `.github/PULL_REQUEST_TEMPLATE/add-resource.md`，知识巡检使用 `knowledge-audit.md`。记录对已有知识的影响或实际巡检发现，不复制整份摘要；未核验部分明确保留。模板用法见 WORKFLOW.md，不因存在模板就自动提交、推送或创建 PR。远程建议收录使用 `.github/ISSUE_TEMPLATE/suggest-resource.md`；Issue 只是候选入口，未进入资料库前不当作已收录资料。
 - 默认仅本地维护。不自动提交、推送、创建远程仓库、定时采集或发送外部消息。
