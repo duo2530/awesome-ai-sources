@@ -12,7 +12,7 @@
 | Felix Rieseberg 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0002.md) · [作者背景](authors/A0001.md) |
 | X / @uudonX | X | 1 条 | [来源记录](sources/S0003.md) · [作者背景](authors/A0002.md) |
 | X / lauren（@poteto） | X | 4 条 | [来源记录](sources/S0004.md) · [作者背景](authors/A0003.md) |
-| 千问AI平台 | 微信公众号 | 2 篇 | [来源记录](sources/S0005.md) |
+| 千问AI平台 | 微信公众号 | 3 篇 | [来源记录](sources/S0005.md) |
 | vikingz.me 博客（名称待确认） | 独立网站 | 1 篇 | [来源记录](sources/S0006.md) |
 | 腾讯技术工程 | 微信公众号 | 2 篇 | [来源记录](sources/S0007.md) |
 | Claude / Resources Articles | 独立网站 | 1 篇 | [来源记录](sources/S0008.md) |
@@ -24,10 +24,15 @@
 | GitHub / Tencent | GitHub | 1 个仓库 | [来源记录](sources/S0014.md) |
 | GitHub / awslabs | GitHub | 1 个仓库 | [来源记录](sources/S0015.md) |
 | GitHub / naodeng | GitHub | 1 个仓库 | [来源记录](sources/S0016.md) |
+| OpenAI / Index | 独立网站 | 1 篇 | [来源记录](sources/S0018.md) · [作者背景](authors/A0014.md) |
 
-已收录 21 条：13 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），7 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
+已收录 23 条：15 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），7 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [直播数据 LLM Wiki 实践](resources/R0023/README.md)（2026-06-26）：来源治理、结构化页面、关系图与检索；[散落资料怎样形成可追溯知识库？](problems/散落资料如何形成可追溯知识库.md)
+
+- [Harness engineering：OpenAI 团队实践](resources/R0022/README.md)（2026-02-11）：可观察环境、AGENTS.md 导航、架构检查与持续清理；对照 TAB 的人工关卡取舍。
 
 - [从 Vibe Coding 到 Harness：大仓实战](resources/R0021/README.md)（2026-07-07）：角色契约、门禁基线与删除无收益 Team Mode 的复盘。
 

@@ -27,3 +27,5 @@
 | R0019 | [awslabs/aidlc-workflows — AI-DLC](R0019/README.md) | [awslabs](../sources/S0015.md) / GitHub | 代码仓库 / 研发工作流 | 已读说明、工作流档位与参考索引；未审引擎、未运行 | 未记录 | 不适用（仓库） |
 | R0020 | [naodeng/awesome-qa-skills](R0020/README.md) | [naodeng](../sources/S0016.md) / GitHub | 代码仓库 / QA 技能集合 | 已读主要说明、三个技能入口与两个主提示词；未运行 | 未记录 | 不适用（仓库） |
 | R0021 | [从Vibe Coding到Harness—— 一套大仓AI工程化实战](R0021/README.md) | [腾讯技术工程](../sources/S0007.md) / 微信公众号 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-07-07 |
+| R0022 | [Harness engineering: leveraging Codex in an agent-first world](R0022/README.md) | [OpenAI / Index](../sources/S0018.md) / 独立网站 | 文章 / 工程复盘 | 已有正文与 AI 摘要 | 未记录 | 2026-02-11 |
+| R0023 | [构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](R0023/README.md) | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 / 知识工程实践 | 已有正文与 AI 摘要 | 未记录 | 2026-06-26 |
