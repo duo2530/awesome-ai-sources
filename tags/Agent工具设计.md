@@ -12,3 +12,5 @@
 - [R0005](../resources/R0005/README.md)：机械迁移用 codemod 和 checker，反复手工作业沉淀为工具。
 
 - [R0016：pstack 插件目录](../resources/R0016/README.md)：调查真实启动、交互、观察与隔离方式，明确 Doctor、Drive、证据和清理流程。
+
+- [R0027：My AI Adoption Journey](../resources/R0027/README.md)：harness 的第二种形式是“真正的程序化工具”（截图、过滤测试），并与 `AGENTS.md` 改动配套；作者称不可只靠提示词。

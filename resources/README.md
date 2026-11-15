@@ -6,7 +6,7 @@
 
 | 编号 | 标题 | 信息源 / 平台 | 形式 | 内容处理 | 我的阅读 | 发布日期 |
 |---|---|---|---|---|---|---|
-| R0001 | [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](R0001/README.md) | [发布账号待确认](../sources/S0001.md) / 微信公众号 | 文章 | 链接已收录，正文待提供 | 未记录 | 待补充 |
+| R0001 | [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](R0001/README.md) | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-06-30 |
 | R0002 | [How to be more ambitious: A tutorial for humans with models](R0002/README.md) | [Felix Rieseberg 的个人博客](../sources/S0002.md) / 独立网站 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-10-13 |
 | R0003 | [AGENTS.md：长期业务系统的项目说明结构参考](R0003/README.md) | [@uudonX](../sources/S0003.md) / X | 短帖 + 截图 / 项目说明结构参考 | 已有用户提供的帖文、截图与 AI 摘要 | 已关注其内容并说明留存理由；未确认深入阅读或实践 | 待补充 |
 | R0004 | [《The Complete Guide to pstack Pt. 1》](R0004/README.md) | [lauren（@poteto）](../sources/S0004.md) / X | 指南 / 系列第 1 部分；用户提供文本，含图片外链与代码示例 | 已有正文与 AI 摘要 | 未记录 | 待补充 |
@@ -32,3 +32,4 @@
 | R0024 | [LLM Wiki](R0024/README.md) | [karpathy](../sources/S0020.md) / GitHub Gist | 思路文档 / Gist | 已有正文与 AI 摘要 | 未记录 | 2026-04-04 |
 | R0025 | [The end of programming](R0025/README.md) | [Paul Dix 的博客](../sources/S0021.md) / 独立网站 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-08-25 |
 | R0026 | [deepseek-ai/dsh-superagent-prototype](R0026/README.md) | [deepseek-ai](../sources/S0022.md) / GitHub | 代码仓库 / 团队编码 Agent 研究原型 | 已读 README、六篇概念与运行文档、包元数据及许可证；未审源码、未运行 | 未记录 | 不适用（仓库） |
+| R0027 | [My AI Adoption Journey](R0027/README.md) | [Mitchell Hashimoto 的个人博客](../sources/S0023.md) / 独立网站 | 文章 / 个人经验记录 | 已有正文与 AI 摘要 | 未记录 | 2026-02-05 |

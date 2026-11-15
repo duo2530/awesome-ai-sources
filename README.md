@@ -8,11 +8,10 @@
 
 | 信息源 | 平台 | 已收录 | 来源入口 |
 |---|---|---:|---|
-| 发布账号待确认（S0001） | 微信公众号 | 1 篇 | [来源记录](sources/S0001.md) |
 | Felix Rieseberg 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0002.md) · [作者背景](authors/A0001.md) |
 | X / @uudonX | X | 1 条 | [来源记录](sources/S0003.md) · [作者背景](authors/A0002.md) |
 | X / lauren（@poteto） | X | 4 条 | [来源记录](sources/S0004.md) · [作者背景](authors/A0003.md) |
-| 千问AI平台 | 微信公众号 | 3 篇 | [来源记录](sources/S0005.md) |
+| 千问AI平台 | 微信公众号 | 4 篇 | [来源记录](sources/S0005.md) |
 | vikingz.me 博客（名称待确认） | 独立网站 | 1 篇 | [来源记录](sources/S0006.md) |
 | 腾讯技术工程 | 微信公众号 | 2 篇 | [来源记录](sources/S0007.md) |
 | Claude / Resources Articles | 独立网站 | 1 篇 | [来源记录](sources/S0008.md) |
@@ -28,10 +27,13 @@
 | Gist / karpathy | GitHub Gist | 1 篇 | [来源记录](sources/S0020.md) · [作者背景](authors/A0017.md) |
 | Paul Dix 的博客 | 独立网站 | 1 篇 | [来源记录](sources/S0021.md) · [作者背景](authors/A0018.md) |
 | GitHub / deepseek-ai | GitHub | 1 个仓库 | [来源记录](sources/S0022.md) |
+| Mitchell Hashimoto 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0023.md) · [作者背景](authors/A0020.md) |
 
-已收录 26 条：17 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），8 条仓库资料已读文档（含 1 个子目录），1 篇正文待提供。来源身份确认后更新名称，保留编号。
+已收录 27 条：19 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），8 条仓库资料已读文档（含 1 个子目录），0 篇正文待提供。来源与作者身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [My AI Adoption Journey](resources/R0027/README.md)（2026-02-05）：Harness Engineering 的一手出处；六步采纳史，作者自认仍在半路，且明确不并行跑多 Agent。
 
 - [DeepSeek dsh-superagent 研究原型](resources/R0026/README.md)：单仓库事件、授权任务、会话执行与待人工处理面板；非正式产品，已读文档，未审源码或运行。
 
@@ -75,11 +77,14 @@
 - [《The Complete Guide to pstack Pt. 1》](resources/R0004/README.md)：可重复的验证工具、功能地图与持续维护。带着问题看：[Agent 如何自行验证？](problems/Agent如何自行验证应用.md) · [如何找到应用功能？](problems/Agent如何找到应用功能.md)
 - [AGENTS.md：长期业务系统的项目说明结构参考](resources/R0003/README.md)：短帖与截图已归档，保留你的留存理由，可按项目说明、按需上下文和验证方式检索。
 - [How to be more ambitious: A tutorial for humans with models](resources/R0002/README.md)：从目标、专业方法和跨领域视角拓展 AI 的用法。可查看作者背景、摘要、正文与可点击标签。
+- [给野马套上缰绳：Agent Harness 工程实践](resources/R0001/README.md)（2026-06-30）：四条铁律、六个工程模式与钉钉 2 Agent + N Skill 的招聘案例；[反复提醒 Agent 仍犯错，约束何时下沉](problems/提示词约束何时下沉.md)
 - 带着问题来：[怎样从小任务转向结果？](problems/从小任务转向结果.md) · [怎样做专业分析并验证？](problems/让AI做专业分析.md) · [怎样借助跨领域方法？](problems/借助跨领域方法.md)
 
 ## 下一步处理
 
-- [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](resources/R0001/README.md)：[粘贴正文](resources/R0001/正文.md)。
+暂无待补正文。以下 6 条原文发布日期仍待补充，不阻塞阅读；补齐需打开原页核对，当前不自动联网：
+
+[R0003](resources/R0003/README.md) · [R0004](resources/R0004/README.md) · [R0005](resources/R0005/README.md) · [R0006](resources/R0006/README.md) · [R0007](resources/R0007/README.md) · [R0013](resources/R0013/README.md)
 
 ## 如何开始
 
@@ -89,7 +94,7 @@ AI 会建立条目、返回正文文件位置；你粘贴正文后通知 AI，�
 
 **代码仓库也可以直接收录**：贴仓库名称、地址和留存理由即可。仓库使用独立的[收录与阅读流程](WORKFLOW.md#代码仓库收录与阅读流程)，记录用途、版本、关键目录和问题关系，不需要粘贴正文；默认不克隆或运行代码。
 
-这里是正式资料库入口。之前的设计样稿及模拟数据仍保留在本地，不纳入本库索引与统计。
+这里是正式资料库入口。早期设计样稿、模拟数据、旧索引副本与演练脚本已清除，本地只保留正式收录内容。
 
 维护后运行 `python scripts/check_url.py --check-library`，只读检查状态、日期、内部链接和索引一致性；[检查范围与退出码](WORKFLOW.md#本地资料检查)。摘要中的原文依据用于追溯出处，问题页保留观点差异与证据缺口，不代表方法已经实践验证。
 

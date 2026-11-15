@@ -18,3 +18,5 @@
 - [R0021：大仓 Harness 实战](../resources/R0021/README.md)：串行场景删除未用到独有能力的 Team Mode，保留认知分工与同步调用。
 
 - [R0026：dsh-superagent-prototype](../resources/R0026/README.md)：主会话路由、各 Ticket 执行会话、追问归属与 worker slots；尚未核验源码和并发正确性。
+
+- [R0001：Agent Harness 工程实践](../resources/R0001/README.md)：模式 1、3、5：Initializer/Executor 经文件接力、Sub-Agent 只带自己的工具、审查换独立 Context；经验是 Agent 不超过 3 个、Skill 可以无限加。
