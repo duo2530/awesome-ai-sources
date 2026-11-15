@@ -61,7 +61,7 @@
 
 - [KiroCrew 代码仓库](resources/R0014/README.md)：已读固定版本的文档、目录与维护者信息；从会话、记忆和治理入口继续查实现。
 
-- [Kiro Crew 软件工厂案例](resources/R0013/README.md)：五阶段并行演进、协调瓶颈与治理；已关联三位作者及截图证据，发布日期待补充。
+- [Kiro Crew 软件工厂案例](resources/R0013/README.md)（2026-09-18）：五阶段并行演进、协调瓶颈与治理；已关联三位作者及截图证据。
 
 - [The AI-native SDLC playbook](resources/R0012/README.md)（2026-08-21，剪藏元数据）：六阶段交接、验证、治理与维护闭环。
 
@@ -82,9 +82,7 @@
 
 ## 下一步处理
 
-暂无待补正文。以下 6 条原文发布日期仍待补充，不阻塞阅读；补齐需打开原页核对，当前不自动联网：
-
-[R0003](resources/R0003/README.md) · [R0004](resources/R0004/README.md) · [R0005](resources/R0005/README.md) · [R0006](resources/R0006/README.md) · [R0007](resources/R0007/README.md) · [R0013](resources/R0013/README.md)
+暂无待补正文，所有文章的原文发布日期均已记录。下一步是读正文、带问题检索，而不是补元信息。
 
 ## 如何开始
 
