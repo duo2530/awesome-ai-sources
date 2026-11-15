@@ -9,6 +9,7 @@
 - 平台：独立网站 / 个人博客
 - 形式：文章
 - 原文发布日期：2026-10-13（[文章页](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/)）
+- 日期依据：见原文发布日期字段所附来源说明
 - 收录日期：2026-11-14
 - 内容处理：已有正文与 AI 摘要
 - 正文语言：英语；未提供译文

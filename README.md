@@ -14,10 +14,21 @@
 | X / lauren（@poteto） | X | 4 条 | [来源记录](sources/S0004.md) · [作者背景](authors/A0003.md) |
 | 千问AI平台 | 微信公众号 | 2 篇 | [来源记录](sources/S0005.md) |
 | vikingz.me 博客（名称待确认） | 独立网站 | 1 篇 | [来源记录](sources/S0006.md) |
+| 腾讯技术工程 | 微信公众号 | 1 篇 | [来源记录](sources/S0007.md) |
+| Claude / Resources Articles | 独立网站 | 1 篇 | [来源记录](sources/S0008.md) |
+| Kiro Blog | 独立网站 | 1 篇 | [来源记录](sources/S0009.md) |
 
-已收录 10 条，其中 8 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），2 条正文待提供。来源身份确认后更新名称，保留编号。
+已收录 13 条，其中 12 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），1 条正文待提供。来源身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [Kiro Crew 软件工厂案例](resources/R0013/README.md)：五阶段并行演进、协调瓶颈与治理；已关联三位作者及截图证据，发布日期待补充。
+
+- [The AI-native SDLC playbook](resources/R0012/README.md)（2026-08-21，剪藏元数据）：六阶段交接、验证、治理与维护闭环。
+
+- [AI Coding 深水区：编码让位，人退到哪里](resources/R0011/README.md)（2026-08-27）：框架与 runtime、评测题集、独立证据和人的判断。
+
+- [我是怎样使用 AI 构建 E2E 测试体系的？](resources/R0010/README.md)（发布于 2026-06-06，用户提供）：关键用户旅程、浏览器预演与多组合回归。
 
 - [端到端交付2.0](resources/R0009/README.md)：标准产物、独立自检、新旧代码规则边界与统计改进。
 
@@ -31,7 +42,9 @@
 
 ## 下一步处理
 
-- [我是怎样使用 AI 构建 E2E 测试体系的？](resources/R0010/README.md)：[粘贴正文](resources/R0010/正文.md)。
+
+
+
 
 
 - [给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地](resources/R0001/README.md)：[粘贴正文](resources/R0001/正文.md)。
