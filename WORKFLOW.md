@@ -174,9 +174,9 @@ python scripts/check_url.py --check-library --json
 
 ### 外部建议：Issue 模板
 
-远程建议收录时使用 [建议收录资料](.github/ISSUE_TEMPLATE/suggest-resource.yml) 表单：标题、原链接与类型必填，留存理由可选，不必粘贴正文。Issue 只是候选入口，不是收录记录：不入库、不计入统计、不替代条目或正文；进入资料库仍按第一轮流程查重、建条目、记录日期与依据，并在 Git 中留下改动。Issue 里不保存原文全文、字幕或截图。
+远程建议收录时使用 [建议收录资料](.github/ISSUE_TEMPLATE/suggest-resource.yaml) 表单：标题、原链接与类型必填，留存理由可选，不必粘贴正文。Issue 只是候选入口，不是收录记录：不入库、不计入统计、不替代条目或正文；进入资料库仍按第一轮流程查重、建条目、记录日期与依据，并在 Git 中留下改动。Issue 里不保存原文全文、字幕或截图。
 
-表单只在 GitHub 网页新建 Issue 时生效，`gh issue create` 等命令行方式不会套用；网页也可在 URL 追加 `?template=suggest-resource.yml` 预填。仓库不自动读取、订阅或关闭 Issue，是否收录与阅读范围由维护者人工处理并回复实际结果。
+表单只在 GitHub 网页新建 Issue 时生效，`gh issue create` 等命令行方式不会套用；网页也可在 URL 追加 `?template=suggest-resource.yaml` 预填。仓库不自动读取、订阅或关闭 Issue，是否收录与阅读范围由维护者人工处理并回复实际结果。
 
 PR 描述记录本次维护的推理与检查结果，[log.md](log.md) 记录知识事件的时间线，具体知识只维护在对应 Markdown 页面。log 只记事件与依据，不复制摘要；它不替代 Git 版本记录，也不自动记录所有查询。
 
