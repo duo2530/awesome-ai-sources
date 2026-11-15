@@ -16,7 +16,7 @@ class LibraryTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.write('README.md', '# 首页\n已收录 1 条：1 条已有原始材料与 AI 摘要，0 条仓库资料已读文档，0 篇正文待提供。\n| 来源 | 1 篇 | [来源](sources/S0001.md) |\n')
+        self.write('README.md', '# 首页\n| 来源 | 1 篇 | [来源](sources/S0001.md) |\n')
         self.write('resources/R0001/README.md', '''# 示例文章
 - 内容编号：R0001
 - 原链接：https://example.com/article
@@ -39,9 +39,9 @@ class LibraryTests(unittest.TestCase):
         self.write('authors/A0001.md', '# 作者\n[资料](../resources/R0001/README.md)\n')
         self.write('authors/README.md', '# 作者\n[作者](A0001.md)\n')
         self.write('tags/知识.md', '# 知识\n[资料](../resources/R0001/README.md)\n')
-        self.write('tags/README.md', '# 标签\n当前有 1 个标签，覆盖 1 条已整理内容\n[知识](知识.md)（1 条）\n')
+        self.write('tags/README.md', '# 标签\n[知识](知识.md)（1 条）\n')
         self.write('problems/问题.md', '# 问题\n[资料](../resources/R0001/README.md)\n')
-        self.write('problems/README.md', '# 问题\n归纳出 1 个问题入口\n[问题](问题.md)\n')
+        self.write('problems/README.md', '# 问题\n[问题](问题.md)\n')
         self.write('log.md', '# 日志\n## [2026-11-15] ingest | 示例\n')
 
     def write(self, name, text):

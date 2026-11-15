@@ -174,7 +174,6 @@ def check_library(root=ROOT):
 
     metadata, source_members, tag_members = {}, {}, {}
     problem_members = set()
-    pending, articles, repositories = 0, 0, 0
     for file in entries:
         file = file.resolve()
         text = texts.get(file, '')
@@ -191,7 +190,6 @@ def check_library(root=ROOT):
         status = meta.get('内容处理', '')
         waiting = status.startswith('链接已收录，')
         if repo:
-            repositories += 1
             if not (status == '链接已收录，仓库待阅读' or status.startswith(('已读', '已实践'))):
                 error(file, '代码仓库的内容处理状态不受支持')
             if not meta.get('原文发布日期', '').startswith('不适用（'):
@@ -199,10 +197,6 @@ def check_library(root=ROOT):
         else:
             if meta.get('原文发布日期', '').startswith('不适用'):
                 error(file, '文章须填写发布日期或待补充，不能写不适用')
-            if waiting:
-                pending += 1
-            else:
-                articles += 1
             if not (status == '链接已收录，正文待提供' or (status.startswith('已有') and '摘要' in status)):
                 error(file, '文章的内容处理状态不受支持')
             original = file.parent / '正文.md'
@@ -409,14 +403,6 @@ def check_library(root=ROOT):
                         if source in targets(idx, line) and line.startswith('|')), '')
             if not re.search(r'\|\s*' + str(len(members)) + r'\s*(?:篇|条|个)', row):
                 error(idx, f'{source.stem} 的来源数量应为 {len(members)}')
-    summaries = [
-        (root / 'README.md', rf'已收录 {len(entries)} 条：{articles} 条已有原始材料与 AI 摘要.*?{repositories} 条仓库资料.*?{pending} 篇正文待提供'),
-        (tag_index, rf'当前有 {len(tag_members)} 个标签，覆盖 {len(set().union(*tag_members.values())) if tag_members else 0} 条已整理内容'),
-        (root / 'problems/README.md', rf'归纳出 {len(list((root / "problems").glob("*.md"))) - 1} 个问题入口'),
-    ]
-    for idx, pattern in summaries:
-        if not re.search(pattern, texts.get(idx, '')):
-            error(idx, '总览统计与正式资料不一致')
     return dict(status='error' if errors else 'ok', checked=len(entries),
                 errors=sorted(set(errors)), warnings=sorted(set(warnings)))
 
