@@ -28,10 +28,16 @@
 | Paul Dix 的博客 | 独立网站 | 1 篇 | [来源记录](sources/S0021.md) · [作者背景](authors/A0018.md) |
 | GitHub / deepseek-ai | GitHub | 1 个仓库 | [来源记录](sources/S0022.md) |
 | Mitchell Hashimoto 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0023.md) · [作者背景](authors/A0020.md) |
+| GitHub / loopx-project | GitHub | 1 个仓库 | [来源记录](sources/S0024.md) |
+| GitHub / orbi-build | GitHub | 1 个仓库 | [来源记录](sources/S0025.md) |
 
-已收录 27 条：19 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），8 条仓库资料已读文档（含 1 个子目录），0 篇正文待提供。来源与作者身份确认后更新名称，保留编号。
+已收录 29 条：19 条已有原始材料与 AI 摘要（含 1 条 SRT 字幕摘要），10 条仓库资料已读文档，0 篇正文待提供。来源与作者身份确认后更新名称，保留编号。
 
 ## 已整理，可以开始读
+
+- [orbi-build/orbi](resources/R0029/README.md)：给 GitHub Issue 打 `ai-ready` 标签，走到独立评审、合并与发布；只有 reviewed head 能合并，失败即标 `ai-blocked` 交人。已读 README，未审源码。
+
+- [loopx-project/loopx](resources/R0028/README.md)：与宿主无关的长时程 Agent 控制面，把 Goal、证据、配额与租约放在持久状态里；作者自陈不是生产控制器。已读 README，未审源码。
 
 - [My AI Adoption Journey](resources/R0027/README.md)（2026-02-05）：Harness Engineering 的一手出处；六步采纳史，作者自认仍在半路，且明确不并行跑多 Agent。
 

@@ -33,3 +33,5 @@
 | R0025 | [The end of programming](R0025/README.md) | [Paul Dix 的博客](../sources/S0021.md) / 独立网站 | 文章 | 已有正文与 AI 摘要 | 未记录 | 2026-08-25 |
 | R0026 | [deepseek-ai/dsh-superagent-prototype](R0026/README.md) | [deepseek-ai](../sources/S0022.md) / GitHub | 代码仓库 / 团队编码 Agent 研究原型 | 已读 README、六篇概念与运行文档、包元数据及许可证；未审源码、未运行 | 未记录 | 不适用（仓库） |
 | R0027 | [My AI Adoption Journey](R0027/README.md) | [Mitchell Hashimoto 的个人博客](../sources/S0023.md) / 独立网站 | 文章 / 个人经验记录 | 已有正文与 AI 摘要 | 未记录 | 2026-02-05 |
+| R0028 | [loopx-project/loopx](R0028/README.md) | [loopx-project](../sources/S0024.md) / GitHub | 代码仓库 / 长时程 Agent 控制面 | 已读 README 与仓库元数据；未读 docs、源码与基准数据，未安装未运行 | 未记录 | 不适用（仓库） |
+| R0029 | [orbi-build/orbi](R0029/README.md) | [orbi-build](../sources/S0025.md) / GitHub | 代码仓库 / 以 GitHub Issue 驱动的自动交付系统 | 已读 README 与仓库元数据；未读 docs 全量、源码与测试，未安装未运行 | 未记录 | 不适用（仓库） |

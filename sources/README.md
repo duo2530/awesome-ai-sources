@@ -24,5 +24,7 @@
 | [Paul Dix 的博客（S0021）](S0021.md) | 独立网站 | 1 篇 | 用户提供作者与账号链接，身份尚未独立核验 |
 | [GitHub / deepseek-ai（S0022）](S0022.md) | GitHub | 1 个仓库 | owner 为组织；包与许可证署名 DeepSeek Harness Team，个人角色未核验 |
 | [Mitchell Hashimoto 的个人博客（S0023）](S0023.md) | 独立网站 | 1 篇 | 2026-11-15 原页署名与版权行确认；任职与公司关系未核验 |
+| [GitHub / loopx-project（S0024）](S0024.md) | GitHub | 1 个仓库 | GitHub API 确认组织；Apache-2.0（v0.4.8 起）；成员与资助关系未核验 |
+| [GitHub / orbi-build（S0025）](S0025.md) | GitHub | 1 个仓库 | GitHub API 确认组织；AGPL-3.0 / SUL v1.0；运营主体未核验 |
 
 以具体账号、频道、博客、官方文档站为单位，平台仅作为属性。同一主体的跨平台账号先分别记录，身份确认后关联。待确认记录仅关联当前文章，不代表所有未知公众号都属于同一来源。

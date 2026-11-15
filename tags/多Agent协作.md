@@ -20,3 +20,7 @@
 - [R0026：dsh-superagent-prototype](../resources/R0026/README.md)：主会话路由、各 Ticket 执行会话、追问归属与 worker slots；尚未核验源码和并发正确性。
 
 - [R0001：Agent Harness 工程实践](../resources/R0001/README.md)：模式 1、3、5：Initializer/Executor 经文件接力、Sub-Agent 只带自己的工具、审查换独立 Context；经验是 Agent 不超过 3 个、Skill 可以无限加。
+
+- [R0028：loopx](../resources/R0028/README.md)：注册 Agent 互为 peer，由 claim、lease、任务边界与类型化续接决定谁下一步行动，不设持久 leader。
+
+- [R0029：orbi](../resources/R0029/README.md)：实现会话与独立评审会话分工，评审在同一会话内修复后交合并门禁。

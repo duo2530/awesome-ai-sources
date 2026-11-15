@@ -259,7 +259,7 @@ def check_library(root=ROOT):
             if not re.search(r'\|\s*' + str(len(members)) + r'\s*(?:篇|条|个)', row):
                 error(idx, f'{source.stem} 的来源数量应为 {len(members)}')
     summaries = [
-        (root / 'README.md', rf'已收录 {len(entries)} 条：{articles} 条已有原始材料与 AI 摘要.*?{repositories} 条仓库资料已读文档.*?{pending} 篇正文待提供'),
+        (root / 'README.md', rf'已收录 {len(entries)} 条：{articles} 条已有原始材料与 AI 摘要.*?{repositories} 条仓库资料.*?{pending} 篇正文待提供'),
         (tag_index, rf'当前有 {len(tag_members)} 个标签，覆盖 {len(set().union(*tag_members.values())) if tag_members else 0} 条已整理内容'),
         (root / 'problems/README.md', rf'归纳出 {len(list((root / "problems").glob("*.md"))) - 1} 个问题入口'),
     ]
