@@ -33,6 +33,7 @@
 | X / @addyosmani | X | 1 条 | [来源记录](sources/S0026.md) · [作者背景](authors/A0021.md) |
 | claude.dev | 独立网站 | 1 篇 | [来源记录](sources/S0027.md) |
 | Anthropic Research | 独立网站 | 1 篇 | [来源记录](sources/S0028.md) |
+| Jane Street Blog | 独立网站 | 0 篇 | [来源记录](sources/S0029.md) |
 
 ## 已整理，可以开始读
 
