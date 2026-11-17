@@ -5,8 +5,8 @@
 - 内容编号：R0033
 - 原链接：https://x.com/addyosmani/status/2122590683055993308
 - 发布来源：[X / @addyosmani（S0026）](../../sources/S0026.md)
-- 作者：Addy Osmani（正文剪藏 `author` 字段）；正文以 Claude Code 团队第一人称写作，段落未署名
-- 作者背景：[Addy Osmani](../../authors/A0021.md) 的档案；内容自称团队工作，是否由其执笔、是否有共同作者未核验
+- 作者：[Addy Osmani](../../authors/A0021.md)（用户于 2026-11-17 确认）
+- 作者背景：个人档案见 [A0021](../../authors/A0021.md)；正文以 Claude Code 团队第一人称写作，个人与团队的分工文中未说明
 - 平台：X
 - 形式：文章 / X Article（含 3 幅外链配图）
 - 原文发布日期：2026-11-17
@@ -27,7 +27,7 @@
 - 文中链接指向 claude.dev、claude.com、code.claude.com 与 fast-check / Hypothesis / proptest 等第三方库，本库均未打开核验。
 - 原页抓取：issue 说明对 X Article 的公开抓取返回 403；本库未另试，也未取得网页版页面结构。
 
-**来源判断**：正文第一人称写 “On the Claude Code team, the vast majority of our code (~90%) is written and reviewed by Claude”，并说 “We have previously written about how code review works at Anthropic”，链接到 R0031 的原页。剪藏 frontmatter 的 `author` 字段记 Addy Osmani，也就是发布账号；本库把“发布者”与“内容口径”分开记录：作者字段按 frontmatter 填 Addy Osmani，内容按正文记为 Claude Code 团队。是否有共同作者、是否有 claude.dev 对应页面，均未核验，见 [S0026](../../sources/S0026.md)；与 R0031 的作者栏不能直接互推。
+**来源判断**：作者按用户于 2026-11-17 的确认记为 Addy Osmani，与剪藏 frontmatter 的 `author` 字段一致。正文以 Claude Code 团队第一人称写作（“On the Claude Code team, the vast majority of our code (~90%) is written and reviewed by Claude”），并说 “We have previously written about how code review works at Anthropic”，链接到 R0031 的原页；因此内容口径是团队，个人与团队的分工文中未说明。是否有共同作者、是否有 claude.dev 对应页面，均未核验，见 [S0026](../../sources/S0026.md)；与 R0031 的作者栏不能直接互推。
 
 ## 一句话说明
 
@@ -130,7 +130,7 @@
 
 ## 适用边界与查漏补缺
 
-- **署名与来源未完全核验**：剪藏 frontmatter 记 `author: Addy Osmani`，正文以团队第一人称写作、段落未署名；两者可以同时成立，但不能证明他是唯一作者，也没有共同作者名单。引用时写“Claude Code 团队（X Article 由 @addyosmani 发布）”。
+- **作者已确认，团队口径未拆分**：作者记为 Addy Osmani（用户 2026-11-17 确认），正文以 Claude Code 团队第一人称写作，文中未说明哪些工作由他本人完成，也没有共同作者名单。引用时可写“Addy Osmani（Claude Code 团队口径，X Article）”。
 - **数字均属团队自述**：90%、10 分、39 项、3–10 项、三轮，均无可公开核对的样本、窗口或口径；不能当行业基准。
 - **大规模前提**：并行几十上百个 Claude、commit gate、可靠性清单、评审评测集，都建立在团队规模与内部工具链上；小团队照搬会先被维护成本压垮。
 - **评测方法强但贵**：重建 repo 状态、人工答案键、tuning/test 分离，是正规做法，也意味着持续投入；文章没讨论这套评测自身的维护成本。
