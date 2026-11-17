@@ -25,6 +25,8 @@
 
 补充：[R0034：Vibing a Non-Trivial Ghostty Feature](../resources/R0034/README.md)：用 cleanup 会话移动方法、补文档、删死代码；作者称清理迫使自己读懂代码，也是后续会话变好的前提。属单人自述，无清理成本或缺陷数据。
 
+补充：[R0037：All Code Is Slop (Except Mine)](../resources/R0037/README.md)：代码库是花园，反模式会被下一个 Agent 复制；Dune 禁 `useEffect`、禁止 Electron 跨层 import、禁 99% 注释，用要求修根因的 lint 替代解释性注释。
+
 ## 我的实践
 
 未记录。本问题由资料归纳，不表示用户已经遇到或采用。

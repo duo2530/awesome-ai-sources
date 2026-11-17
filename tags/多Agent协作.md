@@ -30,3 +30,5 @@
 - [R0031：How the Claude Code team does code review](../resources/R0031/README.md)：多个 agent 并行找 bug、独立投票判定是否有效；也记录了 agent 作者与 agent 评审一夜互相触发 50 多轮的反面案例。
 
 - [R0033：How the Claude Code team thinks about verification](../resources/R0033/README.md)：验证循环把并行上限从一两个提到几十上百，但不靠叠加更贵的 reviewer 提高质量。
+
+- [R0037：All Code Is Slop (Except Mine)](../resources/R0037/README.md)：每个工程师像带几百上千个 Agent；Grokbot 的 connectors 与 routines 用于编排大规模 Agent，前提是代码库与门禁足够好。

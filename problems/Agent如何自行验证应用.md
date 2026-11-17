@@ -20,6 +20,8 @@
 
 补充：[R0033：How the Claude Code team thinks about verification](../resources/R0033/README.md)：把启动与检查写成 `.claude/skills/` 下的 verify 技能，要求快而可靠，提交前运行；主张验证是运行真实系统，而不是只看测试结论。
 
+补充：[R0037：All Code Is Slop (Except Mine)](../resources/R0037/README.md)：runtime verification 用 CDP 等工具让 Agent 自己跑，feature map 与自定义 CLI 减少猜测；另用 TLA+、Lean 与 Bombadil 属性测试，作者称仍在实验。
+
 ## 可以先试什么
 
 以下是据材料归纳的待实践建议：先选一个可稳定复现的功能，准备启动方式和测试身份，串联进入页面、操作、检查预期与保留证据。先验证这条路径可靠，再判断是否值得封装 CLI 或扩展云端并行；不是为所有项目先建一整套工具。
