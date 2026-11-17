@@ -45,6 +45,12 @@
 
 - [Vibing a Non-Trivial Ghostty Feature](resources/R0034/README.md)（2025-10-11）：逐会话公开 16 次 agent 协作，保留撞墙、弃用与人工接管；[用 AI 提效后怎样保住技能？](problems/用AI提效后如何保住技能.md)
 
+- [The components of agent memory](resources/R0035/README.md)（2026-11-06）：把 agent 记忆拆成四层，用离线 dreaming 整理与纠错；[过程经验如何沉淀长期知识？](problems/过程经验如何沉淀长期知识.md)
+
+- [Building always-on agents](resources/R0036/README.md)（2026-11-13）：事件收件箱、定时器、记忆、权限与发件箱五个原语，权限是最高风险层；[可信自动化闭环怎么建？](problems/可信自动化闭环怎么建.md)
+
+- [All Code Is Slop (Except Mine) — Lauren Tan](resources/R0037/README.md)（2026-11-14）：先把约束沉进代码与验证，再自动合并；团队自述 11,000 PRs、约 0.5% revert。
+
 - [How AI assistance impacts the formation of coding skills](resources/R0032/README.md)（2026-01-29）：52 人随机对照实验显示 AI 辅助降低任务后掌握度、速度提升不显著；[用 AI 提效后怎样保住技能？](problems/用AI提效后如何保住技能.md)
 
 - [How the Claude Code team does code review](resources/R0031/README.md)（2026-10-15）：六层检查加回滚线、用事故当评测集、评审必须收敛；三位作者合署，数字为团队自述。
