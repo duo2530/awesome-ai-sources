@@ -18,6 +18,8 @@
 
 补充：[R0030：Your coding agents made you a manager](../resources/R0030/README.md) 第一节：可判定的验证手段（测试、构建退出码、lint、diff 脚本、截图），并提醒“没有验证时，看起来完成就是唯一的验证”；四种落地是要求它跑、`/goal` 条件检查、Stop hook 阻断，以及交给没看过对话的新 subagent 审查。
 
+补充：[R0033：How the Claude Code team thinks about verification](../resources/R0033/README.md)：把启动与检查写成 `.claude/skills/` 下的 verify 技能，要求快而可靠，提交前运行；主张验证是运行真实系统，而不是只看测试结论。
+
 ## 可以先试什么
 
 以下是据材料归纳的待实践建议：先选一个可稳定复现的功能，准备启动方式和测试身份，串联进入页面、操作、检查预期与保留证据。先验证这条路径可靠，再判断是否值得封装 CLI 或扩展云端并行；不是为所有项目先建一整套工具。

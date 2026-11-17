@@ -27,10 +27,10 @@
 | Gist / karpathy | GitHub Gist | 1 篇 | [来源记录](sources/S0020.md) · [作者背景](authors/A0017.md) |
 | Paul Dix 的博客 | 独立网站 | 1 篇 | [来源记录](sources/S0021.md) · [作者背景](authors/A0018.md) |
 | GitHub / deepseek-ai | GitHub | 1 个仓库 | [来源记录](sources/S0022.md) |
-| Mitchell Hashimoto 的个人博客 | 独立网站 | 1 篇 | [来源记录](sources/S0023.md) · [作者背景](authors/A0020.md) |
+| Mitchell Hashimoto 的个人博客 | 独立网站 | 2 篇 | [来源记录](sources/S0023.md) · [作者背景](authors/A0020.md) |
 | GitHub / loopx-project | GitHub | 1 个仓库 | [来源记录](sources/S0024.md) |
 | GitHub / orbi-build | GitHub | 1 个仓库 | [来源记录](sources/S0025.md) |
-| X / @addyosmani | X | 1 条 | [来源记录](sources/S0026.md) · [作者背景](authors/A0021.md) |
+| X / @addyosmani | X | 2 条 | [来源记录](sources/S0026.md) · [作者背景](authors/A0021.md) |
 | claude.dev | 独立网站 | 1 篇 | [来源记录](sources/S0027.md) |
 | Anthropic Research | 独立网站 | 1 篇 | [来源记录](sources/S0028.md) |
 | Jane Street Blog | 独立网站 | 0 篇 | [来源记录](sources/S0029.md) |
@@ -39,7 +39,11 @@
 
 - [综合：长时程 Agent 的状态与控制面](synthesis/T0001-长时程Agent的状态与控制面.md)（2026-11-15）：对照 loopx 与 orbi 两条路线，把“状态放哪里”的取舍、共同的人工门与共同的证据缺口收在一页；随新资料修订。
 
-- [How AI assistance impacts the formation of coding skills](resources/R0032/README.md)：52 人随机对照实验显示 AI 辅助降低任务后掌握度、速度提升不显著；[用 AI 提效后怎样保住技能？](problems/用AI提效后如何保住技能.md)
+- [How the Claude Code team thinks about verification](resources/R0033/README.md)（2026-11-17）：E2E 优先、属性与差分测试补边界，再用 verify 技能、失败三轮交人、检查不可自改与 observe 门放开并行；数字为团队自述。
+
+- [Vibing a Non-Trivial Ghostty Feature](resources/R0034/README.md)（2025-10-11）：逐会话公开 16 次 agent 协作，保留撞墙、弃用与人工接管；[用 AI 提效后怎样保住技能？](problems/用AI提效后如何保住技能.md)
+
+- [How AI assistance impacts the formation of coding skills](resources/R0032/README.md)（2026-01-29）：52 人随机对照实验显示 AI 辅助降低任务后掌握度、速度提升不显著；[用 AI 提效后怎样保住技能？](problems/用AI提效后如何保住技能.md)
 
 - [How the Claude Code team does code review](resources/R0031/README.md)（2026-10-15）：六层检查加回滚线、用事故当评测集、评审必须收敛；三位作者合署，数字为团队自述。
 
@@ -98,7 +102,7 @@
 
 ## 下一步处理
 
-暂无待补正文；R0032 的原文发布日期待补充（正文未标注，未联网补）。下一步是读正文、带问题检索，而不是补元信息。综合页目前只有 1 页，语义巡检按需执行，尚未配置定时任务。
+本轮按 issue #8、#5 收录 [R0033](resources/R0033/README.md) 与 [R0034](resources/R0034/README.md)，两条都有正文与 AI 摘要。R0033 的作者已按用户确认记为 Addy Osmani（正文以团队第一人称写作）；R0032 的发布日期已按用户 2026-11-17 提供的 2026-01-29 补上，原页未打开核验。下一步是读正文、带问题检索，而不是补元信息。综合页目前只有 1 页，语义巡检按需执行，尚未配置定时任务。
 
 ## 如何开始
 

@@ -28,3 +28,5 @@
 - [R0030：Your coding agents made you a manager](../resources/R0030/README.md)：并行要按不重叠切片拆分，否则只是“一个五作者的 merge conflict”；提出编排税——超过前几个 Agent 后，每个新增都要更多注意力。
 
 - [R0031：How the Claude Code team does code review](../resources/R0031/README.md)：多个 agent 并行找 bug、独立投票判定是否有效；也记录了 agent 作者与 agent 评审一夜互相触发 50 多轮的反面案例。
+
+- [R0033：How the Claude Code team thinks about verification](../resources/R0033/README.md)：验证循环把并行上限从一两个提到几十上百，但不靠叠加更贵的 reviewer 提高质量。

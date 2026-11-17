@@ -23,10 +23,10 @@
 | [Gist / karpathy（S0020）](S0020.md) | GitHub Gist | 1 篇 | 指定 Gist 页面账号与固定 Raw 地址；未核验个人履历 |
 | [Paul Dix 的博客（S0021）](S0021.md) | 独立网站 | 1 篇 | 用户提供作者与账号链接，身份尚未独立核验 |
 | [GitHub / deepseek-ai（S0022）](S0022.md) | GitHub | 1 个仓库 | owner 为组织；包与许可证署名 DeepSeek Harness Team，个人角色未核验 |
-| [Mitchell Hashimoto 的个人博客（S0023）](S0023.md) | 独立网站 | 1 篇 | 2026-11-15 原页署名与版权行确认；任职与公司关系未核验 |
+| [Mitchell Hashimoto 的个人博客（S0023）](S0023.md) | 独立网站 | 2 篇 | 2026-11-15 原页署名与版权行确认；任职与公司关系未核验 |
 | [GitHub / loopx-project（S0024）](S0024.md) | GitHub | 1 个仓库 | GitHub API 确认组织；Apache-2.0（v0.4.8 起）；成员与资助关系未核验 |
 | [GitHub / orbi-build（S0025）](S0025.md) | GitHub | 1 个仓库 | GitHub API 确认组织；AGPL-3.0 / SUL v1.0；运营主体未核验 |
-| [X / @addyosmani（S0026）](S0026.md) | X | 1 条 | 用户提供 X 账号与 LinkedIn；本人身份未远程核验 |
+| [X / @addyosmani（S0026）](S0026.md) | X | 2 条 | 用户提供 X 账号与 LinkedIn；本人身份未远程核验；R0033 正文未署名 |
 | [claude.dev（S0027）](S0027.md) | 独立网站 | 1 篇 | 2026-11-15 原页核验：作者栏三人、分类 Engineering，与 code.claude.com 互链；运营主体未核验 |
 | [Anthropic Research（S0028）](S0028.md) | 独立网站 | 1 篇 | 正文自述与站内链接确认发布站；作者、发布日期与运营主体未核验 |
 | [Jane Street Blog（S0029）](S0029.md) | 独立网站 | 0 篇 | 2026-11-17 核验首页与发布主体；文章尚未收录 |
