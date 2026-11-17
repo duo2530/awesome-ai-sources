@@ -14,7 +14,7 @@
 | 千问AI平台 | 微信公众号 | 4 篇 | [来源记录](sources/S0005.md) |
 | vikingz.me 博客（名称待确认） | 独立网站 | 1 篇 | [来源记录](sources/S0006.md) |
 | 腾讯技术工程 | 微信公众号 | 2 篇 | [来源记录](sources/S0007.md) |
-| Claude / Resources Articles | 独立网站 | 1 篇 | [来源记录](sources/S0008.md) |
+| Claude / Resources Articles | 独立网站 | 2 篇 | [来源记录](sources/S0008.md) |
 | Kiro Blog | 独立网站 | 1 篇 | [来源记录](sources/S0009.md) |
 | GitHub / kirodotdev | GitHub | 1 个仓库 | [来源记录](sources/S0010.md) |
 | GitHub / mattpocock | GitHub | 1 个仓库 | [来源记录](sources/S0011.md) · [作者背景](authors/A0011.md) |
@@ -35,6 +35,7 @@
 | Anthropic Research | 独立网站 | 1 篇 | [来源记录](sources/S0028.md) |
 | Jane Street Blog | 独立网站 | 0 篇 | [来源记录](sources/S0029.md) |
 | Anthropic Engineering | 独立网站 | 1 篇（正文待提供） | [来源记录](sources/S0030.md) |
+| YouTube / AI Engineer | YouTube | 1 条 | [来源记录](sources/S0031.md) |
 
 ## 已整理，可以开始读
 
@@ -103,7 +104,7 @@
 
 ## 下一步处理
 
-本轮按 issue #8、#5 收录 [R0033](resources/R0033/README.md) 与 [R0034](resources/R0034/README.md)，两条都有正文与 AI 摘要。R0033 的作者已按用户确认记为 Addy Osmani（正文以团队第一人称写作）；R0032 的发布日期已按用户 2026-11-17 提供的 2026-01-29 补上，原页未打开核验。R0035 为历史索引迁入，正文待提供。下一步是读正文、带问题检索，而不是补元信息。综合页目前只有 1 页，语义巡检按需执行，尚未配置定时任务。
+本轮按 issue #8、#5 收录 [R0033](resources/R0033/README.md) 与 [R0034](resources/R0034/README.md)，两条都有正文与 AI 摘要。R0033 的作者已按用户确认记为 Addy Osmani（正文以团队第一人称写作）；R0032 的发布日期已按用户 2026-11-17 提供的 2026-01-29 补上，原页未打开核验。R0035 为历史索引迁入，R0036、R0037 为链接入库，三者的正文与字幕待提供。下一步是读正文、带问题检索，而不是补元信息。综合页目前只有 1 页，语义巡检按需执行，尚未配置定时任务。
 
 ## 如何开始
 
