@@ -10,6 +10,8 @@
 
 再看 [R0022：OpenAI Harness engineering](../resources/R0022/README.md) 的 Increasing application legibility 与 What we’re still learning，补运行可见性和长期未知；对照 [R0021：TAB 大仓实践](../resources/R0021/README.md) 第 5—6 章的人工关卡与门禁。
 
+补充：[R0034：Vibing a Non-Trivial Ghostty Feature](../resources/R0034/README.md)：功能真正上线（tip → 1.3），但作者把最终人工整体 review 写成交付前提；16 个会话、$15.98、约 8 小时均为自述，不能当交付成本基准。
+
 ## 观点差异与适用条件
 
 | 观点或选择 | 资料与位置 | 适用条件 | 不能直接推出什么 |
