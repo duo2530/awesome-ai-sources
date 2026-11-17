@@ -30,6 +30,8 @@
 ## [2026-11-15] schema | 删除首页、标签、问题索引的手工统计行及对应校验
 ## [2026-11-15] schema | 把建议收录资料模板改为 YAML issue 表单，删除 Markdown 模板
 ## [2026-11-15] schema | 把建议收录资料表单扩展名改为 .yaml
+## [2026-11-16] ingest | 收录 R0036 链接：Building always-on agents；复用 S0008，正文待提供，发布日期待补充
+## [2026-11-16] ingest | 收录 R0037 链接：All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI；新建 YouTube 频道来源 S0031，正文待提供
 ## [2026-11-17] ingest | 登记 Jane Street Blog（S0029）为信息源，尚未收录单篇文章
 ## [2026-11-17] ingest | 按 issue #8、#5 收录 R0033、R0034，正文均由 issue 评论提供；R0033 作者身份待核验
 ## [2026-11-17] lint | 按用户提供把 R0032 原文发布日期补为 2026-01-29，与正文引用的 arXiv 2601.20245 一致
