@@ -373,7 +373,11 @@ def check_library(root=ROOT):
         actual = {p for p in (root / directory).glob('*.md') if p.name != 'README.md'}
         if directory == 'sources':
             actual = {p for p in actual if '历史来源编号' not in texts.get(p, '')}
-        if actual != set(members):
+            # 来源可以先登记为信息源、尚未收录文章；有成员的来源页仍必须存在。
+            missing = set(members) - actual
+            if missing:
+                error(index_file, '来源页缺失：' + '、'.join(sorted(p.name for p in missing)))
+        elif actual != set(members):
             error(index_file, f'{directory} 存在未关联资料的页面，或正式页面缺失')
         indexed = {p for p in references.get(index_file, set()) if p.parent == root / directory and p.name != 'README.md'}
         if indexed != actual:

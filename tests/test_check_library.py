@@ -116,6 +116,13 @@ class LibraryTests(unittest.TestCase):
         self.replace('resources/R0001/README.md', 'S0001.md', 'S0002.md')
         self.assertTrue(any('历史归并页' in e for e in self.check()['errors']))
 
+    def test_registered_source_without_articles_is_allowed(self):
+        self.write('sources/S0002.md', '# 新来源\n## 已收录内容\n\n当前 0 篇。\n')
+        self.replace('sources/README.md', '| 身份 |', '| 身份 |\n\n- [新来源](S0002.md)：0 篇')
+        self.assertEqual(self.check()['errors'], [])
+        self.replace('sources/README.md', '\n\n- [新来源](S0002.md)：0 篇', '')
+        self.assertTrue(any('索引成员与正式页面不一致' in e for e in self.check()['errors']))
+
     def test_partial_dates_keep_their_original_precision(self):
         for value in ('2026', '2026-06'):
             with self.subTest(value=value):
