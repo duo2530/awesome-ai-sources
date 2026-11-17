@@ -40,3 +40,4 @@
 | R0032 | [How AI assistance impacts the formation of coding skills](R0032/README.md) | 随机对照实验：AI 组学得更少、也没明显更快，怎么用比用不用更关键。 | [Anthropic Research](../sources/S0028.md) / 独立网站 | 文章 / 研究报告摘要（随机对照实验，含 2 幅图表） | 已有正文与 AI 摘要 | 未记录 | 2026-01-29 |
 | R0033 | [How the Claude Code team thinks about verification](R0033/README.md) | E2E 优先，属性与差分测试补边界，再用 verify 技能与观察期门禁放开并行自动化。 | [X / @addyosmani](../sources/S0026.md) / X | 文章 / X Article（含 3 幅外链配图） | 已有正文与 AI 摘要 | 未记录 | 2026-11-17 |
 | R0034 | [Vibing a Non-Trivial Ghostty Feature](R0034/README.md) | 逐会话公开 16 次 agent 协作：先规划与原型、撞墙后人工接管、cleanup 强制理解、最终人工 review。 | [Mitchell Hashimoto 的个人博客](../sources/S0023.md) / 独立网站 | 文章 / 长文（逐会话记录，含 2 段外链视频与 2 幅外链图片） | 已有正文与 AI 摘要 | 未记录 | 2025-10-11 |
+| R0035 | [The components of agent memory](R0035/README.md) | 机构署名的 Agent 记忆文章；仅收录链接，正文待提供。 | [Anthropic Engineering](../sources/S0030.md) / 独立网站 | 工程研究文章 | 链接已收录，正文待提供 | 未记录 | 2026-11-06 |
