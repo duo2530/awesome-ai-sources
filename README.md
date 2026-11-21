@@ -37,6 +37,8 @@
 | Anthropic Engineering | 独立网站 | 1 篇（正文待提供） | [来源记录](sources/S0030.md) |
 | YouTube / AI Engineer | YouTube | 1 条 | [来源记录](sources/S0031.md) |
 
+| Prime Radiant Blog | 独立网站 | 1 篇（正文待提供） | [来源记录](sources/S0032.md) |
+
 ## 已整理，可以开始读
 
 - [综合：长时程 Agent 的状态与控制面](synthesis/T0001-长时程Agent的状态与控制面.md)（2026-11-15）：对照 loopx 与 orbi 两条路线，把“状态放哪里”的取舍、共同的人工门与共同的证据缺口收在一页；随新资料修订。
@@ -109,6 +111,9 @@
 - 带着问题来：[怎样从小任务转向结果？](problems/从小任务转向结果.md) · [怎样做专业分析并验证？](problems/让AI做专业分析.md) · [怎样借助跨领域方法？](problems/借助跨领域方法.md)
 
 ## 下一步处理
+
+2026-11-21 新增 [R0038：External sandboxes for coding agents](resources/R0038/README.md)，仅登记链接，正文待提供，作者与日期尚需复核；未保存第三方全文。
+
 
 本轮按 issue #8、#5 收录 [R0033](resources/R0033/README.md) 与 [R0034](resources/R0034/README.md)，两条都有正文与 AI 摘要。R0033 的作者已按用户确认记为 Addy Osmani（正文以团队第一人称写作）；R0032 的发布日期已按用户 2026-11-17 提供的 2026-01-29 补上，原页未打开核验。R0035、R0036、R0037 已补充正文（R0037 是带时间戳的演讲转录），三条都已整理摘要、标签与问题关联。下一步是读正文、带问题检索，而不是补元信息。综合页目前只有 1 页，语义巡检按需执行，尚未配置定时任务。
 
