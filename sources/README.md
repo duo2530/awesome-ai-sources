@@ -7,7 +7,7 @@
 | [Felix Rieseberg 的个人博客（S0002）](S0002.md) | 独立网站 | 1 篇 | [已核验作者背景](../authors/A0001.md)，2026-11-14 |
 | [X / @uudonX（S0003）](S0003.md) | X | 1 条 | 账号取自原帖 URL，任职待核验 |
 | [X / lauren（@poteto，S0004）](S0004.md) | X | 4 条 | pstack README 链接 @poteto，清单署名 Lauren Tan；LinkedIn 与职级未核验 |
-| [千问AI平台（S0005）](S0005.md) | 微信公众号 | 4 篇 | 正文署名森叶、悟壳、楚翎、程知微与涅羽；未远程核验 |
+| [千问AI平台（S0005）](S0005.md) | 微信公众号 | 5 篇 | 正文署名森叶、悟壳、楚翎、程知微与涅羽；未远程核验 |
 | [vikingz.me 博客（S0006）](S0006.md) | 独立网站 | 1 篇 | 作者与站点名称待确认 |
 | [腾讯技术工程（S0007）](S0007.md) | 微信公众号 | 2 篇 | 正文页头与署名确认，未远程核验 |
 | [Claude / Resources Articles（S0008）](S0008.md) | 独立网站 | 2 篇 | 剪藏署名 Louis Claxton 与用户核验的 William Hu，均未远程核验 |

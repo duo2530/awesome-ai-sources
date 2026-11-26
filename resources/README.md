@@ -43,3 +43,4 @@
 | R0035 | [The components of agent memory](R0035/README.md) | 机构署名的 Agent 记忆文章；把记忆拆成四层，用 dreaming 整理与纠错。 | [Anthropic Engineering](../sources/S0030.md) / 独立网站 | 工程研究文章（含 15 幅外链图表） | 已有正文与 AI 摘要 | 未记录 | 2026-11-06 |
 | R0036 | [Building always-on agents](R0036/README.md) | 把 always-on agent 拆成五个原语与 run/session 循环，权限风险最高。 | [Claude / Resources Articles](../sources/S0008.md) / 独立网站 | 文章 / 工程指南（含 7 幅外链图，其中 3 幅动画） | 已有正文与 AI 摘要 | 未记录 | 2026-11-13 |
 | R0037 | [All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI](R0037/README.md) | 如何信任 Agent：先把约束沉进代码与验证，再自动合并；团队自述 11,000 PRs、0.5% revert。 | [YouTube / AI Engineer](../sources/S0031.md) / YouTube | 视频 / 带时间戳的演讲转录稿（约 17 分钟） | 已有转录与 AI 摘要 | 未记录 | 2026-11-14 |
+| R0041 | [命令式、函数式与 λ 编码：不同代码表达对 AI 协作成本的影响](R0041/README.md) | 待正文提供后整理。 | [千问AI平台](../sources/S0005.md) / 微信公众号 | 文章 | 链接已收录，正文待提供 | 未记录 | 2026-11-26 |
